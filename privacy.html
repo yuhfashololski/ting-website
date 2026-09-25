@@ -23,15 +23,17 @@
 </nav>
 <main class="wrap"><article class="doc">
 <h1>Privacy Policy</h1>
-<p><strong>Last updated: 24 September 2026</strong></p>
+<p><strong>Last updated: 25 September 2026</strong></p>
 <h2>Summary</h2>
-<p>Ting has no analytics and no advertising. An account is optional. If you
-create one, we keep your name, your email address and your learning progress
-so that your progress survives a new phone. If you don't, nothing that
-identifies you leaves your phone.</p>
-<p>Three services are involved, each described below: <strong>Supabase</strong>, which runs
-accounts and serves the lesson list; <strong>YouTube</strong>, which plays the videos; and,
-if you choose them, <strong>Apple</strong> or <strong>Google</strong> for signing in.</p>
+<p>Ting has no advertising. An account is optional. If you create one, we keep
+your name, your email address and your learning progress so that your
+progress survives a new phone. Ting also sends usage statistics — which
+screens and clips people use — so we can see what helps people learn; you
+can turn this off in Profile.</p>
+<p>Four services are involved, each described below: <strong>Supabase</strong>, which runs
+accounts and serves the lesson list; <strong>PostHog</strong>, which receives the usage
+statistics; <strong>YouTube</strong>, which plays the videos; and, if you choose them,
+<strong>Apple</strong> or <strong>Google</strong> for signing in.</p>
 <h2>If you create an account</h2>
 <p>We collect:</p>
 <ul>
@@ -55,9 +57,24 @@ never see it. Your sign-in session is kept in your iPhone's Keychain.</p>
 with it from our servers, immediately. Progress on your phone stays until you
 delete the app.</p>
 <h2>If you don't create an account</h2>
-<p>Nothing that identifies you is collected. Your progress is saved on your
-device only, using Apple's standard on-device storage, and deleting the app
-removes it.</p>
+<p>No name or email is collected. Your progress is saved on your device only,
+using Apple's standard on-device storage, and deleting the app removes it.</p>
+<h2>Usage statistics</h2>
+<p>To learn which parts of Ting work, the app sends <strong>PostHog</strong> (our analytics
+provider, in the United States) a record of what happens in it: which
+onboarding screens were shown and the answers given there (such as your
+level and daily goal), when the app is opened, which clips were watched and
+for how long, which words were looked up, flashcard reviews, and your
+streak. Each record carries the app version, iOS version and a random ID
+created on your phone. If you are signed in, that ID is your account ID, so
+we can tell that two phones belong to one learner.</p>
+<p>These records contain no name, email address, contacts, location or
+advertising identifier, and nothing from the YouTube player. They are used
+only to improve Ting, never for advertising, and are not sold or shared.</p>
+<p>To stop them, turn off <strong>Profile → Share usage statistics</strong>. To have the
+statistics linked to you deleted, email us from the address below.</p>
+<p>PostHog's handling of data is governed by the
+<a href="https://posthog.com/privacy">PostHog Privacy Policy</a>.</p>
 <h2>What the app stores on your device</h2>
 <ul>
 <li>Words you have met and saved, and their review history</li>
@@ -88,7 +105,8 @@ privacy-enhanced mode, and send Google nothing about you.</p>
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <h2>Reminders</h2>
 <p>If you ask for a daily reminder, it is scheduled on your phone as a local
-notification. Nothing is sent to a server to deliver it.</p>
+notification, as is one reminder an hour after your first session. Nothing
+is sent to a server to deliver them.</p>
 <h2>Speech synthesis</h2>
 <p>Pronunciation audio is generated on your device by Apple's speech synthesis.</p>
 <h2>Tracking</h2>

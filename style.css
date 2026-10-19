@@ -164,3 +164,17 @@ footer .spacer { margin-left: auto; }
   .meet img { margin: 0 auto; width: 160px; }
   .download { padding: 48px 20px; border-radius: 28px; }
 }
+
+/* Launch list */
+.notify { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; max-width: 520px; margin: 18px auto 0; }
+.notify input[type=email] {
+  flex: 1 1 240px; min-width: 0; font: inherit; font-size: 17px; color: var(--ink);
+  padding: 14px 16px; border-radius: 16px; border: 1px solid var(--line); background: var(--card);
+}
+.notify input[type=email]:focus { outline: 2px solid var(--coral); outline-offset: 1px; }
+.notify .btn { border: 0; cursor: pointer; font-family: inherit; }
+.notify .btn:disabled { opacity: .6; cursor: default; }
+.notify-msg { min-height: 1.4em; margin: 12px 0 0; font-weight: 700; }
+.notify-msg.good { color: #7FD39C; }
+.notify-msg.bad { color: #FF8A7E; }
+.sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); border: 0; }

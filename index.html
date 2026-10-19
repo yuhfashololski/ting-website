@@ -34,10 +34,7 @@
       <h1>Learn Chinese by scrolling <span class="flag">🇨🇳</span></h1>
       <p class="lede">Ting turns real Chinese videos into lessons at your level. Watch, tap the words you don't know, and watch them stick.</p>
       <div class="ctas">
-        <a class="btn" href="#download">
-          <svg class="apple" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.75 2.21 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.67-2.14.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.32-.89-2.34-3.53zM14.2 6.13c.61-.74 1.02-1.76.91-2.78-.88.04-1.94.59-2.57 1.32-.56.65-1.06 1.69-.93 2.69.98.08 1.98-.5 2.59-1.23z"/></svg>
-          Coming soon to iPhone
-        </a>
+        <a class="btn" href="#download">Click to join the waitlist</a>
         <a class="btn ghost" href="#how">See how it works</a>
       </div>
       <p class="soon">Try Ting Pro free for 7 days.</p>
@@ -152,8 +149,16 @@
     <div class="download">
       <img class="m" src="img/ting.png" alt="">
       <h2>Start understanding real Chinese</h2>
-      <p>Ting is coming soon to the App Store.</p>
-      <a class="btn" href="mailto:noah@tingpanda.com?subject=Tell%20me%20when%20Ting%20launches">Tell me when it launches</a>
+      <p>Ting is coming soon to the App Store. Leave your email and we'll tell you the day it's out.</p>
+      <form class="notify" id="notify" novalidate>
+        <label class="sr" for="notify-email">Email</label>
+        <input id="notify-email" name="email" type="email" inputmode="email" autocomplete="email"
+               placeholder="you@example.com" required maxlength="254">
+        <input class="sr" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Tell me when it launches</button>
+      </form>
+      <p class="notify-msg" id="notify-msg" role="status" aria-live="polite"></p>
+      <p class="soon">One email when Ting launches. No spam. <a href="privacy.html">Privacy</a></p>
     </div>
   </div>
 </section>
@@ -167,6 +172,45 @@
     <span class="spacer">© 2026 Ting. Made in Australia.</span>
   </div>
 </footer>
+
+<script>
+// "Tell me when it launches": adds the email to Supabase's launch_signups
+// table (insert only; see tools/sql/launch_signups.sql). The key is the
+// public anon key the app ships with.
+(function () {
+  var URL = "https://tvasqjzwjfirneeaderi.supabase.co/rest/v1/launch_signups";
+  var KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2YXNxanp3amZpcm5lZWFkZXJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk5OTUwMDgsImV4cCI6MjEwNTU3MTAwOH0.SgWv__EEBj5vW8KK1sqQUIj9pH5wPj1g8ckh_Kf7JsQ";
+  var form = document.getElementById("notify");
+  var msg = document.getElementById("notify-msg");
+  var button = form.querySelector("button");
+  // "Click to join the waitlist" jumps to the form and puts the cursor in it.
+  document.querySelectorAll('a[href="#download"]').forEach(function (a) {
+    a.addEventListener("click", function () {
+      setTimeout(function () { form.email.focus({ preventScroll: true }); }, 400);
+    });
+  });
+  function say(text, bad) { msg.textContent = text; msg.className = "notify-msg" + (bad ? " bad" : " good"); }
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (form.website.value) return;            // a bot filled the hidden field
+    var email = form.email.value.trim();
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { say("That email doesn't look right.", true); return; }
+    button.disabled = true;
+    fetch(URL, {
+      method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + KEY,
+                 "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({ email: email, source: "website" })
+    }).then(function (r) {
+      // 409: already on the list, which is fine.
+      if (r.ok || r.status === 409) { form.reset(); form.hidden = true; say("You're on the list. We'll email you when Ting launches."); }
+      else { throw new Error(r.status); }
+    }).catch(function () {
+      say("Something went wrong. Please try again, or email noah@tingpanda.com.", true);
+    }).finally(function () { button.disabled = false; });
+  });
+})();
+</script>
 
 </body>
 </html>

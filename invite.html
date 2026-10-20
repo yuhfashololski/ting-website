@@ -57,6 +57,7 @@
     <div class="step">
       <b>2. Join Ting's beta</b>
       <p>Open this on your iPhone, then tap Accept and Install.</p>
+      <p id="inapp" class="fine" hidden><b>Opened this inside Instagram or TikTok?</b> Their browser can't open TestFlight. Tap ••• at the top and choose "Open in Safari" (or copy this page's link into Safari), then tap Join the beta.</p>
       <a class="btn" href="https://testflight.apple.com/join/K19fJUEg">Join the beta</a>
     </div>
     <div class="step">
@@ -82,6 +83,10 @@
 // tingpanda.com/invite.html?c=CODE: shows the code and logs the visit in
 // Supabase's invite_clicks (insert only; growth/backend/migration-06-referrals.sql).
 (function () {
+  // In-app browsers (Instagram, TikTok, Facebook) can't open TestFlight.
+  if (/Instagram|FBAN|FBAV|musical_ly|TikTok|BytedanceWebview/i.test(navigator.userAgent)) {
+    document.getElementById("inapp").hidden = false;
+  }
   var code = (new URLSearchParams(location.search).get("c") || "").toUpperCase();
   if (!/^[A-Z2-9]{6}$/.test(code)) {
     document.getElementById("step3").textContent =

@@ -3,17 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ting — Learn Chinese by scrolling</title>
-<meta name="description" content="Ting is the app for learning Mandarin from real Chinese videos at your level: vlogs, cooking, gaming, dramas and more. Tap any word to understand it; Ting brings it back before you forget.">
-<meta property="og:title" content="Ting — Learn Chinese by scrolling">
+<title>Ting: Learn Chinese by Scrolling Real Chinese Videos</title>
+<meta name="description" content="Ting is the app for learning Mandarin from real Chinese videos at your level: gaming, vlogs, cooking, dramas and more. Tap any word to understand it; Ting brings it back before you forget.">
+<meta property="og:title" content="Ting: Learn Chinese by scrolling">
 <meta property="og:description" content="Learn Mandarin from real Chinese videos at your level.">
 <meta property="og:image" content="img/icon.png">
 <link rel="icon" href="img/favicon.png">
 <link rel="apple-touch-icon" href="img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&family=Noto+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="home.css?v=9">
 </head>
 <body>
 
@@ -21,173 +21,200 @@
   <div class="wrap">
     <a class="brand" href="./"><img src="img/icon.png" alt="">Ting</a>
     <div class="links">
-      <a href="#how">How it works</a>
+      <a href="#how">How It Works</a>
       <a href="#about">About</a>
-      <a class="keep" href="support.html">Contact</a>
+      <a href="support.html">Contact</a>
     </div>
+    <div class="cta" data-get="small"></div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
     <div>
-      <h1>Learn Chinese by scrolling <span class="flag">🇨🇳</span></h1>
-      <p class="lede">Ting turns real Chinese videos into lessons at your level. Watch, tap the words you don't know, and watch them stick.</p>
-      <div class="ctas">
-        <a class="btn" href="#download">Click to join the waitlist</a>
-        <a class="btn ghost" href="#how">See how it works</a>
-      </div>
-      <p class="soon">Try Ting Pro free for 7 days.</p>
+      <h1>Learn <span class="flag">🇨🇳</span> Chinese <em>by scrolling</em></h1>
+      <p class="lede">Ting is the app for understanding real Chinese, one short clip at a time, at exactly your level.</p>
+      <div data-get="big"></div>
+      <p class="note" data-soon>Coming soon to the App Store · 7-day free trial</p>
     </div>
-    <div class="phones" aria-hidden="true">
-      <div class="phone one"><img src="img/meet.jpg" alt=""></div>
-      <div class="phone two"><img src="img/word.jpg" alt=""></div>
-      <img class="mascot" src="img/ting.png" alt="">
+
+    <div class="stage">
+      <div class="phone" id="phone" aria-label="Ting playing a real Chinese clip">
+        <div class="island"></div>
+        <div class="screen">
+          <div class="app-top">
+            <div class="goal"><i></i></div>
+            <div class="tabs"><b>For You</b><span>Explore</span></div>
+          </div>
+          <div id="clipwrap">
+            <div class="player">
+              <div class="video"><div id="yt"></div></div>
+            </div>
+            <div class="subs">
+              <button class="sound" id="sound" type="button">🔇 Tap for sound</button>
+              <div class="clip-label"><span id="fmt"></span> · <span id="lvl"></span></div>
+              <div class="line zh" id="line"></div>
+              <div class="english" id="english"></div>
+              <div class="hint" id="hint">Tap a word!</div>
+            </div>
+          </div>
+          <div class="sheet" id="sheet">
+            <div class="grab"></div>
+            <div class="head"><b id="sh-h"></b><span id="sh-p"></span></div>
+            <div class="def" id="sh-en"></div>
+            <div class="saved">Saved to your flashcards</div>
+          </div>
+          <div class="nav-bar"><span>▶ Feed</span><span>📖 Vocab</span><span>👤 Profile</span></div>
+        </div>
+      </div>
+      <button class="next" id="next" type="button">scroll to next clip ↑</button>
+      <div class="dots" id="clipdots"></div>
     </div>
   </div>
 </header>
 
-<section id="how">
+<section class="features" id="how">
   <div class="wrap">
-    <div class="center">
-      <div class="eyebrow">How it works</div>
-      <h2>Real Chinese you can actually follow</h2>
-      <p class="sub">Every clip is chosen so you already know almost every word. The one or two you don't are exactly the ones you're ready to learn.</p>
-    </div>
 
-    <div class="stats">
-      <div class="stat"><b>11,000+</b><span>clips of real Chinese</span></div>
-      <div class="stat"><b>HSK 1–6</b><span>from first words to fluency</span></div>
-      <div class="stat"><b>3–15 s</b><span>per clip, replay as often as you like</span></div>
-    </div>
-
-    <div class="feature" style="margin-top:96px">
-      <div class="text">
-        <div class="eyebrow">01</div>
-        <h2>Learn from videos you enjoy</h2>
-        <p class="sub">Vlogs, cooking, gaming, dramas, stories and podcasts from Chinese creators. If you only ever want gaming, Ting keeps finding gaming clips at your level.</p>
-        <div class="chips">
-          <span class="chip">🎮 Gaming</span><span class="chip">🍜 Cooking</span><span class="chip">🎬 Dramas</span>
-          <span class="chip">📹 Vlogs</span><span class="chip">📖 Stories</span><span class="chip">🎙️ Podcasts</span>
-        </div>
+    <div class="row">
+      <div class="demo">
+        <div class="carousel"><div class="track" id="track"></div></div>
+        <div class="dots" id="showdots"></div>
       </div>
-      <div class="shot"><img src="img/plan.jpg" alt="Your Ting plan: daily goal, first 50 words and real clips"></div>
+      <div class="card">
+        <h2>1. Learn from videos you actually enjoy</h2>
+        <p class="pain">Textbook dialogues are boring, and real Chinese TV is way too fast to follow.</p>
+        <p class="fix">Scroll through short clips from Chinese creators: gaming, vlogs, cooking, dramas, stories and podcasts. Each one is picked so you already know almost every word.</p>
+      </div>
     </div>
 
-    <div class="feature flip">
-      <div class="text">
-        <div class="eyebrow">02</div>
-        <h2>Understand every word instantly</h2>
-        <p class="sub">Every line is laid out word by word, with pinyin above and English below. Tap anything you don't know for its meaning, tones and the sentence you heard it in.</p>
-        <div class="card">
-          <div class="demo-word zh">
-            <div class="w"><div class="py">wǒ</div><div class="hz">我</div><div class="rule"></div></div>
-            <div class="w new"><div class="py">jué de</div><div class="hz">觉得</div><div class="rule"></div><div class="gl">think</div></div>
-            <div class="w"><div class="py">hěn</div><div class="hz">很</div><div class="rule"></div></div>
-            <div class="w"><div class="py">hǎo</div><div class="hz">好</div><div class="rule"></div></div>
+    <div class="row flip">
+      <div class="demo">
+        <div class="wordcard">
+          <div class="sentence zh" id="sentence"></div>
+          <div class="panel">
+            <div class="top"><b id="wc-h"></b><span class="py" id="wc-p"></span><div class="tags" id="wc-tags"></div></div>
+            <div class="seg" id="seg"><button class="on" data-t="def" type="button">Definition</button><button data-t="tones" type="button">Tones</button><button data-t="ex" type="button">Example</button></div>
+            <div class="body" id="wc-body"></div>
           </div>
-          <div style="color:var(--ink-2)">I think it's very good.</div>
         </div>
       </div>
-      <div class="shot"><img src="img/word.jpg" alt="Tapping a word shows its meaning and tones"></div>
+      <div class="card">
+        <h2>2. Understand every word instantly</h2>
+        <p class="pain">One unknown word and the whole sentence is gone. So you avoid real Chinese, and stay stuck as a beginner.</p>
+        <p class="fix">Every line is laid out word by word with pinyin above. Tap any word to see:</p>
+        <ul><li>Its meaning in this sentence</li><li>Its tones</li><li>An example from another real clip</li><li>Saved straight to your flashcards</li></ul>
+      </div>
     </div>
 
-    <div class="feature">
-      <div class="text">
-        <div class="eyebrow">03</div>
-        <h2>Remember what you learn</h2>
-        <p class="sub">Every word you meet is remembered. Ting brings it back in a fresh clip just before you'd forget it, scheduled by a modern spaced-repetition model, so review feels like watching, not studying.</p>
-      </div>
-      <div class="card" style="max-width:420px;justify-self:center">
-        <div class="eyebrow" style="color:var(--bamboo)">Coming back today</div>
-        <div class="demo-word zh">
-          <div class="w new"><div class="py">zhī dào</div><div class="hz">知道</div><div class="rule"></div><div class="gl">know</div></div>
-          <div class="w new"><div class="py">xǐ huan</div><div class="hz">喜欢</div><div class="rule"></div><div class="gl">like</div></div>
-          <div class="w new"><div class="py">kě yǐ</div><div class="hz">可以</div><div class="rule"></div><div class="gl">can</div></div>
+    <div class="row">
+      <div class="demo">
+        <div class="flash">
+          <div class="fcard" id="fcard">
+            <div class="thumb" id="fc-thumb"></div>
+            <div class="face">
+              <div class="ex zh" id="fc-ex"></div>
+              <div class="big zh" id="fc-h"></div>
+              <div class="py" id="fc-p"></div>
+              <div class="mean" id="fc-en"></div>
+              <div class="exen" id="fc-exen"></div>
+              <div class="tap">Tap to reveal</div>
+            </div>
+          </div>
+          <div class="howwell" id="howwell">Did you know it?</div>
+          <div class="rate" id="rate"><button class="again" data-r="again" type="button">Again<small>5m</small></button><button class="good" data-r="good" type="button">Good<small>1d</small></button></div>
         </div>
-        <p style="color:var(--ink-2);margin:12px 0 0">Heard once, looked up once, now due again, each in a new clip.</p>
+      </div>
+      <div class="card">
+        <h2>3. Remember what you learn</h2>
+        <p class="pain">You look a word up, and two days later it's gone.</p>
+        <p class="fix">Every word you tap becomes a flashcard from the clip you heard it in. Ting brings it back just before you'd forget it, in a fresh clip, scheduled by a modern spaced-repetition model (FSRS). Review feels like watching, not studying.</p>
       </div>
     </div>
+
   </div>
 </section>
 
-<section id="about">
+<section class="meet" id="about">
   <div class="wrap">
-    <div class="meet">
-      <img src="img/ting.png" alt="Ting the panda">
+    <h2>Your guide from 你好 to <em>fluent.</em></h2>
+    <div class="grid">
+      <div class="panda"><div class="say">你好！我叫听。</div><img src="img/ting.png" alt="Ting the panda"></div>
       <div>
-        <div class="eyebrow" style="color:var(--bamboo)">Meet Ting</div>
-        <h2>Your guide from 你好 to fluent</h2>
-        <div class="zh">
-          <span class="bubble"><span class="py">nǐ hǎo</span><span class="hz">你好！</span><span class="en">Hello!</span></span>
-          <span class="bubble"><span class="py">wǒ jiào tīng</span><span class="hz">我叫听。</span><span class="en">My name is Ting.</span></span>
-        </div>
-        <p class="sub" style="margin-top:18px">听 (tīng) means <em>listen</em>. Starting from zero? Ting teaches your first words, then finds real clips made almost entirely of them. Already know some Chinese? Your first few clips double as a quick level check.</p>
+        <div class="eyebrow">Meet Ting</div>
+        <p><b>听 (tīng) means listen.</b> That's the whole idea: you learn Chinese the way you learnt your first language, by hearing real people use it, at a level you can follow.</p>
+        <p>Starting from zero? Ting teaches your first words, then finds real clips made almost entirely of them. Already know some Chinese? Your first few clips double as a quick level check.</p>
+        <p>Over 10,000 clips across HSK 1–6, each a few seconds long, with about one new word at a time and a picture that shows you what it means.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="faq">
+<section class="download" id="download">
   <div class="wrap">
-    <div class="center">
-      <div class="eyebrow">Questions</div>
-      <h2>Good to know</h2>
-    </div>
-    <div class="faq">
-      <details><summary>How much does Ting cost?</summary><p>Ting Pro is US$49.99 a year, with a 7-day free trial, or US$9.99 a month. The app shows the price in your currency before you confirm. Cancel any time in Settings → your name → Subscriptions. The videos themselves are YouTube's, and always free to watch on YouTube.</p></details>
-      <details><summary>Do I need to know any Chinese?</summary><p>No. Ting starts beginners with their first words and real clips made of them. If you already know some, tell Ting your level and your first clips will fine-tune it.</p></details>
-      <details><summary>Where do the videos come from?</summary><p>From Chinese creators and shows on YouTube, played through YouTube's official embedded player. Ting never copies or hosts any video, and every clip links back to its creator.</p></details>
-      <details><summary>Which devices does it work on?</summary><p>iPhone, launching soon on the App Store. Watching clips needs an internet connection; your saved words and reviews work offline.</p></details>
-      <details><summary>Do I need an account?</summary><p>No. An account is optional and only keeps your progress if you change phones. You can delete it any time in the app.</p></details>
-    </div>
+    <img class="m" src="img/ting.png" alt="">
+    <h2>Download Ting</h2>
+    <p id="dl-text">Coming soon to the App Store. Leave your email and we'll tell you the day it's out.</p>
+    <div data-get="big" data-form></div>
+    <p class="notify-msg" id="notify-msg" role="status" aria-live="polite"></p>
   </div>
 </section>
 
-<section id="download">
+<section class="faq">
   <div class="wrap">
-    <div class="download">
-      <img class="m" src="img/ting.png" alt="">
-      <h2>Start understanding real Chinese</h2>
-      <p>Ting is coming soon to the App Store. Leave your email and we'll tell you the day it's out.</p>
-      <form class="notify" id="notify" novalidate>
-        <label class="sr" for="notify-email">Email</label>
-        <input id="notify-email" name="email" type="email" inputmode="email" autocomplete="email"
-               placeholder="you@example.com" required maxlength="254">
-        <input class="sr" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <button class="btn" type="submit">Tell me when it launches</button>
-      </form>
-      <p class="notify-msg" id="notify-msg" role="status" aria-live="polite"></p>
-      <p class="soon">One email when Ting launches. No spam. <a href="privacy.html">Privacy</a></p>
-    </div>
+    <h2>Good to know</h2>
+    <details><summary>How much does Ting cost?</summary><p>Ting Pro is US$49.99 a year, with a 7-day free trial, or US$9.99 a month. The app shows the price in your currency before you confirm. Cancel any time in Settings → your name → Subscriptions. The videos themselves are YouTube's, and always free to watch on YouTube.</p></details>
+    <details><summary>Do I need to know any Chinese?</summary><p>No. Ting starts beginners with their first words and real clips made of them. If you already know some, your first clips fine-tune your level.</p></details>
+    <details><summary>Where do the videos come from?</summary><p>From Chinese creators on YouTube, played through YouTube's official embedded player. Ting never copies or hosts any video, and every clip links back to its creator.</p></details>
+    <details><summary>Which devices does it work on?</summary><p>iPhone and iPad. Watching clips needs an internet connection; your saved words and reviews work offline.</p></details>
   </div>
 </section>
 
 <footer>
-  <div class="wrap">
-    <a class="brand" href="./"><img src="img/icon.png" alt="">Ting</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms of Service</a>
-    <a href="support.html">Support</a>
-    <span class="spacer">© 2026 Ting. Made in Australia.</span>
-  </div>
+  <a href="terms.html">Terms of Use</a> • <a href="privacy.html">Privacy Policy</a> • <a href="support.html">Contact</a>
+  <div style="margin-top:8px">© 2026 Ting. Made in Melbourne.</div>
 </footer>
 
+<script src="clips.js?v=2"></script>
 <script>
-// "Tell me when it launches": adds the email to Supabase's launch_signups
-// table (insert only; see tools/sql/launch_signups.sql). The key is the
-// public anon key the app ships with.
+// Once Ting is live, put its App Store link here: every "join the waitlist"
+// becomes the App Store badge.
+var APP_STORE_URL = "";
+var BADGE = "https://tools.applemarketingtools.com/api/badges/download-on-the-app-store/black/en-us?size=250x83";
+
 (function () {
+  var live = !!APP_STORE_URL;
+  document.querySelectorAll("[data-get]").forEach(function (el) {
+    var big = el.dataset.get === "big";
+    if (live) {
+      el.innerHTML = '<a class="store' + (big ? " big" : "") + '" href="' + APP_STORE_URL + '"><img src="' + BADGE + '" alt="Download on the App Store"></a>';
+    } else if (el.hasAttribute("data-form")) {
+      el.innerHTML = '<form class="notify" id="notify" novalidate><label class="sr" for="notify-email">Email</label>' +
+        '<input id="notify-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required maxlength="254">' +
+        '<input class="sr" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">' +
+        '<button class="btn big" type="submit">Tell me when it launches</button></form>' +
+        '<p class="small">One email when Ting launches. No spam. <a href="privacy.html">Privacy</a></p>';
+    } else {
+      el.innerHTML = '<a class="btn' + (big ? " big" : "") + '" href="#download">' + (big ? "Join the waitlist" : "Get Ting") + "</a>";
+    }
+  });
+  if (live) {
+    document.querySelectorAll("[data-soon]").forEach(function (el) { el.textContent = "Free for 7 days on iPhone and iPad"; });
+    document.getElementById("dl-text").textContent = "Available now on iPhone and iPad.";
+  }
+})();
+
+// Waitlist: adds the email to Supabase's launch_signups table (insert only;
+// see tools/sql/launch_signups.sql). The key is the public anon key the app ships with.
+(function () {
+  var form = document.getElementById("notify");
+  if (!form) return;
   var URL = "https://tvasqjzwjfirneeaderi.supabase.co/rest/v1/launch_signups";
   var KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR2YXNxanp3amZpcm5lZWFkZXJpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk5OTUwMDgsImV4cCI6MjEwNTU3MTAwOH0.SgWv__EEBj5vW8KK1sqQUIj9pH5wPj1g8ckh_Kf7JsQ";
-  var form = document.getElementById("notify");
   var msg = document.getElementById("notify-msg");
   var button = form.querySelector("button");
-  // "Click to join the waitlist" jumps to the form and puts the cursor in it.
   document.querySelectorAll('a[href="#download"]').forEach(function (a) {
-    a.addEventListener("click", function () {
-      setTimeout(function () { form.email.focus({ preventScroll: true }); }, 400);
-    });
+    a.addEventListener("click", function () { setTimeout(function () { form.email.focus({ preventScroll: true }); }, 400); });
   });
   function say(text, bad) { msg.textContent = text; msg.className = "notify-msg" + (bad ? " bad" : " good"); }
   form.addEventListener("submit", function (e) {
@@ -198,8 +225,7 @@
     button.disabled = true;
     fetch(URL, {
       method: "POST",
-      headers: { "apikey": KEY, "Authorization": "Bearer " + KEY,
-                 "Content-Type": "application/json", "Prefer": "return=minimal" },
+      headers: { "apikey": KEY, "Authorization": "Bearer " + KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
       body: JSON.stringify({ email: email, source: "website" })
     }).then(function (r) {
       // 409: already on the list, which is fine.
@@ -210,7 +236,199 @@
     }).finally(function () { button.disabled = false; });
   });
 })();
-</script>
 
+// The hero phone: real Ting clips through YouTube's embedded player, with the
+// line word by word underneath. Tap a word for its meaning; scroll for the next clip.
+(function () {
+  var clips = window.TING_CLIPS, at = 0, player = null, muted = true, timer = null, loops = 0;
+  var $ = function (id) { return document.getElementById(id); };
+  var sheet = $("sheet"), hint = $("hint"), dots = $("clipdots");
+  clips.forEach(function () { dots.appendChild(document.createElement("i")); });
+
+  function show(c) {
+    $("fmt").textContent = c.label;
+    $("lvl").textContent = "HSK " + c.hsk;
+    $("english").textContent = c.english;
+    var line = $("line"); line.innerHTML = "";
+    c.words.forEach(function (w, i) {
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "w" + (w.n ? " new" : "");
+      b.innerHTML = '<span class="p">' + w.p + '</span><span class="h">' + w.h + "</span>" + (w.n ? '<span class="g">' + w.en + "</span>" : "");
+      b.addEventListener("click", function () { open(w); });
+      line.appendChild(b);
+    });
+    [].forEach.call(dots.children, function (d, i) { d.className = i === at ? "on" : ""; });
+    sheet.classList.remove("open");
+    hint.style.display = "";
+    requestAnimationFrame(placeHint);
+  }
+  function placeHint() {
+    var target = $("line").querySelector(".w.new") || $("line").firstChild;
+    if (!target) return;
+    // Under the line, pointing up at the new word, so it never covers a word.
+    var subs = target.closest(".subs").getBoundingClientRect(), r = target.getBoundingClientRect();
+    var line = $("line").getBoundingClientRect();
+    hint.style.left = Math.max(4, Math.min(r.left - subs.left + r.width / 2 - 50, subs.width - 112)) + "px";
+    hint.style.top = (line.bottom - subs.top + 8) + "px";
+  }
+  function open(w) {
+    $("sh-h").textContent = w.h; $("sh-p").textContent = w.p; $("sh-en").textContent = w.en;
+    sheet.classList.add("open"); hint.style.display = "none";
+  }
+  function go(dir) {
+    var wrap = $("clipwrap");
+    wrap.classList.add("slide-out");
+    setTimeout(function () {
+      at = (at + dir + clips.length) % clips.length;
+      wrap.classList.remove("slide-out"); wrap.classList.add("slide-in");
+      show(clips[at]); play(clips[at]);
+      setTimeout(function () { wrap.classList.remove("slide-in"); }, 400);
+    }, 300);
+  }
+  function play(c) {
+    if (!player || !player.loadVideoById) return;
+    player.loadVideoById({ videoId: c.yt, startSeconds: c.start, endSeconds: c.end });
+    if (muted) player.mute(); else player.unMute();
+  }
+  function tick() {
+    if (!player || !player.getCurrentTime) return;
+    var t = player.getCurrentTime(), c = clips[at];
+    [].forEach.call($("line").children, function (b, i) {
+      var w = c.words[i]; b.classList.toggle("now", t >= w.s && t < w.e);
+    });
+  }
+  window.onYouTubeIframeAPIReady = function () {
+    var c = clips[at];
+    player = new YT.Player("yt", {
+      videoId: c.yt,
+      playerVars: { start: Math.floor(c.start), end: Math.ceil(c.end), autoplay: 1, mute: 1, playsinline: 1, controls: 0, rel: 0, origin: location.origin },
+      events: {
+        onReady: function (e) { e.target.mute(); e.target.seekTo(clips[at].start, true); e.target.playVideo(); },
+        // Each clip plays twice, then the feed moves on by itself.
+        onStateChange: function (e) {
+          if (e.data !== YT.PlayerState.ENDED) return;
+          if (++loops >= 2 && !sheet.classList.contains("open")) { loops = 0; go(1); }
+          else { player.seekTo(clips[at].start, true); player.playVideo(); }
+        }
+      }
+    });
+    timer = setInterval(tick, 120);
+  };
+  $("sound").addEventListener("click", function () {
+    muted = !muted;
+    if (player && player.unMute) { if (muted) player.mute(); else { player.unMute(); player.playVideo(); } }
+    this.textContent = muted ? "🔇 Tap for sound" : "🔊 Sound on";
+  });
+  $("next").addEventListener("click", function () { loops = 0; go(1); });
+  sheet.addEventListener("click", function () { sheet.classList.remove("open"); });
+  window.addEventListener("resize", placeHint);
+  show(clips[at]);
+  var s = document.createElement("script"); s.src = "https://www.youtube.com/iframe_api"; document.head.appendChild(s);
+})();
+
+// 1. The clip formats, sliding past like Kiku's shows. Three copies of the
+// row, so it can loop forever: the highlighted card stays in the middle.
+(function () {
+  var shows = window.TING_SHOWS, n = shows.length, track = document.getElementById("track"), dots = document.getElementById("showdots"), at = n;
+  for (var k = 0; k < 3; k++) shows.forEach(function (s) {
+    var d = document.createElement("div");
+    d.className = "show";
+    d.style.backgroundImage = "url(https://i.ytimg.com/vi/" + s.yt + "/hqdefault.jpg)";
+    d.innerHTML = "<b>" + s.label + "</b><span>" + s.channel + "</span>";
+    track.appendChild(d);
+  });
+  shows.forEach(function () { dots.appendChild(document.createElement("i")); });
+  function move(animate) {
+    var el = track.children[at];
+    track.style.transition = animate ? "" : "none";
+    [].forEach.call(track.children, function (c, i) { c.className = "show" + (i === at ? " on" : ""); });
+    [].forEach.call(dots.children, function (d, i) { d.className = i === at % n ? "on" : ""; });
+    track.style.transform = "translateX(" + -(el.offsetLeft + el.offsetWidth / 2) + "px)";
+  }
+  move(false);
+  setInterval(function () {
+    at++; move(true);
+    // Past the middle copy: jump back to the same card in it, unseen.
+    if (at >= 2 * n) setTimeout(function () { at -= n; move(false); }, 650);
+  }, 2400);
+})();
+
+// 2. Tap a word: the card Ting shows.
+(function () {
+  var words = window.TING_DEMO, sel = 4, tab = "def";
+  var ex = {
+    "喝": ["我在喝水", "I'm drinking water"], "咖啡": ["你喜欢喝热咖啡", "You like drinking hot coffee"],
+    "和": ["这个人和这个人", "This person and this person"], "朋友": ["是我的朋友", "Is my friend"],
+    "聊天": ["喝咖啡和朋友聊天。", "Drinking coffee and chatting with friends."]
+  };
+  // The app's tone guide (ToneGuide in WordDefinitionSheet.swift).
+  var names = ["", "First tone", "Second tone", "Third tone", "Fourth tone", "Light tone"];
+  var like = ["", "High and flat, like singing a note", "Rises, like asking \u201Chuh?\u201D", "Dips low, like \u201Cmhm\u201D",
+              "Drops hard, like scolding someone", "Light and short"];
+  var paths = ["", "M6 10 H48", "M6 32 L48 8", "M6 16 Q20 38 30 32 T48 8", "M6 8 L48 34", ""];
+  function tone(s) {
+    var m = { "āēīōūǖ": 1, "áéíóúǘ": 2, "ǎěǐǒǔǚ": 3, "àèìòùǜ": 4 };
+    for (var k in m) for (var i = 0; i < k.length; i++) if (s.indexOf(k[i]) >= 0) return m[k];
+    return 5;
+  }
+  var box = document.getElementById("sentence");
+  words.forEach(function (w, i) {
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "w";
+    b.innerHTML = '<span class="p">' + w.p + '</span><span class="h">' + w.h + "</span>";
+    b.addEventListener("click", function () { sel = i; draw(); });
+    box.appendChild(b);
+  });
+  var punct = document.createElement("span"); punct.className = "w"; punct.innerHTML = '<span class="p">&nbsp;</span><span class="h" style="border:0">。</span>'; box.appendChild(punct);
+  document.querySelectorAll("#seg button").forEach(function (b) {
+    b.addEventListener("click", function () { tab = b.dataset.t; draw(); });
+  });
+  function draw() {
+    var w = words[sel];
+    [].forEach.call(box.children, function (b, i) { b.classList.toggle("sel", i === sel); });
+    document.querySelectorAll("#seg button").forEach(function (b) { b.classList.toggle("on", b.dataset.t === tab); });
+    document.getElementById("wc-h").textContent = w.h;
+    document.getElementById("wc-p").textContent = w.p;
+    document.getElementById("wc-tags").innerHTML = "<span>HSK " + w.hsk + "</span>" + (w.pos && w.pos !== "unknown" ? "<span>" + w.pos + "</span>" : "");
+    var body = document.getElementById("wc-body");
+    if (tab === "def") body.innerHTML = '<div class="lbl">In this line</div>' + w.en.split(";")[0].replace(/ conjunction$/, "");
+    else if (tab === "tones") body.innerHTML = '<div class="tones">' + w.p.split(" ").map(function (s) {
+      var t = tone(s);
+      return '<div class="tone"><svg viewBox="0 0 54 40"><path d="' + (paths[t] || "M6 22 H12") + '" stroke="#E05C50" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+        (t === 5 ? '<circle cx="27" cy="22" r="5" fill="#E05C50"/>' : "") + '</svg><div><b>' + s + "</b> · " + names[t] + "<small>" + like[t] + "</small></div></div>";
+    }).join("") + "</div>";
+    else body.innerHTML = '<div class="lbl">' + (ex[w.h][0].indexOf("喝咖啡和朋友") === 0 ? "In this clip" : "From another clip") + '</div><div class="zh" style="font-size:20px">' + ex[w.h][0] + '</div><div style="color:#9A9AA2;font-size:14px">' + ex[w.h][1] + "</div>";
+  }
+  draw();
+})();
+
+// 3. A review card: tap to reveal, then Again or Good.
+(function () {
+  var cards = [
+    { h: "喜欢", p: "xǐ huan", en: "to like", ex: "你喜欢做什么？", exen: "What do you like doing?", yt: "8HTiV2SnZfE" },
+    { h: "知道", p: "zhī dào", en: "to know", ex: "你知道吗？", exen: "You know what?", yt: "GqTrV5lYTjM" },
+    { h: "好吃", p: "hǎo chī", en: "delicious", ex: "鸡蛋很好吃", exen: "Eggs are delicious.", yt: "a4FsK4aZ-MI" }
+  ];
+  var at = 0, card = document.getElementById("fcard"), rate = document.getElementById("rate"), how = document.getElementById("howwell");
+  function draw() {
+    var c = cards[at];
+    document.getElementById("fc-thumb").style.backgroundImage = "url(https://i.ytimg.com/vi/" + c.yt + "/hqdefault.jpg)";
+    document.getElementById("fc-ex").textContent = c.ex;
+    document.getElementById("fc-h").textContent = c.h;
+    document.getElementById("fc-p").textContent = c.p;
+    document.getElementById("fc-en").textContent = c.en;
+    document.getElementById("fc-exen").textContent = c.exen;
+    card.classList.remove("shown", "leave"); rate.classList.remove("on"); how.classList.remove("on");
+  }
+  card.addEventListener("click", function () { card.classList.add("shown"); rate.classList.add("on"); how.classList.add("on"); });
+  rate.querySelectorAll("button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      card.classList.add("leave");
+      setTimeout(function () { at = (at + 1) % cards.length; draw(); }, 320);
+    });
+  });
+  draw();
+})();
+</script>
 </body>
 </html>

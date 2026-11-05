@@ -154,7 +154,7 @@
   <div class="wrap">
     <img class="m" src="img/ting.png" alt="">
     <h2>Download Ting</h2>
-    <p id="dl-text">Coming soon to the App Store. Leave your email and we'll tell you the day it's out.</p>
+    <p id="dl-text">Coming soon to the App Store. Leave your email and I'll tell you the day it's out.</p>
     <div data-get="big" data-form></div>
     <p class="notify-msg" id="notify-msg" role="status" aria-live="polite"></p>
   </div>
@@ -229,7 +229,7 @@ var BADGE = "https://tools.applemarketingtools.com/api/badges/download-on-the-ap
       body: JSON.stringify({ email: email, source: "website" })
     }).then(function (r) {
       // 409: already on the list, which is fine.
-      if (r.ok || r.status === 409) { form.reset(); form.hidden = true; say("You're on the list. We'll email you when Ting launches."); }
+      if (r.ok || r.status === 409) { form.reset(); form.hidden = true; say("You're on the list. I'll email you when Ting launches."); }
       else { throw new Error(r.status); }
     }).catch(function () {
       say("Something went wrong. Please try again, or email noah@tingpanda.com.", true);

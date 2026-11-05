@@ -47,6 +47,10 @@
   .two li { margin-bottom: 10px; }
 
   .ideas-intro { margin: -18px 0 30px; }
+  .inspo { display: grid; grid-template-columns: 220px 1fr; gap: 28px; align-items: center; margin: 0 0 30px; }
+  .inspo video { display: block; width: 100%; aspect-ratio: 9 / 16; border-radius: 16px; background: #000; }
+  .inspo b { display: block; font: 800 22px/1.2 "Nunito", sans-serif; margin-bottom: 6px; }
+  .inspo span { color: var(--ink-2); font-size: 16px; }
   .idea { background: #fff; border: 1px solid var(--line); border-bottom-width: 4px; border-radius: 20px; margin-bottom: 18px; }
   .idea summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 26px; }
   .idea summary::-webkit-details-marker { display: none; }
@@ -87,6 +91,8 @@
     .terms, .two { grid-template-columns: 1fr; }
     .two { gap: 44px; }
     .steps { grid-template-columns: 1fr 1fr; }
+    .inspo { grid-template-columns: 1fr; gap: 16px; }
+    .inspo video { max-width: 260px; }
     .beats li { grid-template-columns: 34px 1fr; }
     .beats li > div + div { grid-column: 2; }
     .ugc { grid-template-columns: 1fr; gap: 20px; }
@@ -172,7 +178,12 @@
 <section class="c-sec tint" id="ideas">
   <div class="wrap">
     <h2>Three video ideas to start from</h2>
-    <p class="ideas-intro">These are starting points, not lines to read out. Change anything so it sounds like you, and only keep what's true for you. For the parts that show the app, ask Noah for a screen recording to use.</p>
+    <p class="ideas-intro">These are starting points, not lines to read out. Change anything so it sounds like you, and only keep what's true for you. For the parts that show the app, ask me (Noah) for a screen recording to use.</p>
+
+    <figure class="inspo">
+      <video src="https://social-gen.s3.amazonaws.com/videos/7694815793871179028.mp4#t=0.5" controls playsinline preload="metadata"></video>
+      <figcaption><b>Where the inspiration came from</b><span>This video is for a different study app, not Ting. Borrow the format: a satisfying hands-on hook, a relatable problem, then a quick look at the app.</span></figcaption>
+    </figure>
 
     <details class="idea" open>
       <summary><div><b>The C-drama subtitle trap</b><span>"Is it just me, or are subtitles actually the biggest trap?"</span></div></summary>

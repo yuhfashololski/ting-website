@@ -67,6 +67,8 @@
   .ref-row { display: flex; flex-wrap: wrap; gap: 18px; }
   .ref { margin: 0; width: 100%; max-width: 300px; }
   .ref iframe { display: block; width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: 14px; background: #000; }
+  .ref-play { appearance: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: 14px; background: #231f1c; color: #fff; font: 800 17px "Nunito", sans-serif; cursor: pointer; }
+  .ref-play span { font-size: 36px; line-height: 1; }
   .ref figcaption { margin-top: 8px; font-size: 14px; color: var(--ink-2); }
   .ref figcaption a { color: var(--coral-dark); font-weight: 700; }
   .ref figcaption span { display: block; margin-top: 3px; }
@@ -211,10 +213,10 @@
     <p class="ideas-intro">These are starting points, not lines to read out. Change anything so it sounds like you, and only keep what's true for you. For the parts that show the app, ask me (Noah) for a screen recording to use. Each idea includes a real video to learn from. For more examples, with a version for each audience, open the <a href="formats.html" style="color:var(--coral-dark);font-weight:700">Ting Format Finder</a>.</p>
 
 
-    <details class="idea" open>
+    <details class="idea">
       <summary><div><b>The C-drama subtitle trap</b><span>"Is it just me, or are subtitles actually the biggest trap?"</span></div></summary>
       <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1" title="Reference video by @studyingwithtierra" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Borrow the format: satisfying hands, a relatable complaint, then a quick look at the app. This one is for a study app.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1&amp;autoplay=1" data-title="Reference video by @studyingwithtierra" aria-label="Play Reference video by @studyingwithtierra"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Borrow the format: satisfying hands, a relatable complaint, then a quick look at the app. This one is for a study app.</span></figcaption></figure>
       </div></div>
       <ol class="beats">
         <li>
@@ -248,7 +250,7 @@
     <details class="idea">
       <summary><div><b>The dictionary loop</b><span>"Is it just me, or do teachers expect us to look up every word manually?"</span></div></summary>
       <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1" title="Reference video by @studyingwithtierra" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Same format as the subtitle trap: a complaint over something satisfying, then the app.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1&amp;autoplay=1" data-title="Reference video by @studyingwithtierra" aria-label="Play Reference video by @studyingwithtierra"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Same format as the subtitle trap: a complaint over something satisfying, then the app.</span></figcaption></figure>
       </div></div>
       <ol class="beats">
         <li>
@@ -281,7 +283,7 @@
     <details class="idea">
       <summary><div><b>The HSK 4 wall</b><span>"POV: You hit the HSK 4 wall and gave up."</span></div></summary>
       <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1" title="Reference video by @studyingwithtierra" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Same format again: a relatable complaint, then the app.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1&amp;autoplay=1" data-title="Reference video by @studyingwithtierra" aria-label="Play Reference video by @studyingwithtierra"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Same format again: a relatable complaint, then the app.</span></figcaption></figure>
       </div></div>
       <ol class="beats">
         <li>
@@ -315,8 +317,8 @@
     <details class="idea">
       <summary><div><b>The crying learner</b><span>"This is just not fair. How do people understand Chinese?"</span></div></summary>
       <div class="refs"><h4>Reference videos</h4><div class="ref-row">
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7573598206358031623?controls=1" title="Reference video by @learnwithshrimpik" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@learnwithshrimpik/video/7573598206358031623" target="_blank" rel="noopener">@learnwithshrimpik</a> · 31.9M views<span>The biggest example, for a Russian-learning app.</span></figcaption></figure>
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7561245335427878151?controls=1" title="Reference video by @lifewchloedespatie" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@lifewchloedespatie/video/7561245335427878151" target="_blank" rel="noopener">@lifewchloedespatie</a> · 4.8M views<span>The same format about learning Chinese.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7573598206358031623?controls=1&amp;autoplay=1" data-title="Reference video by @learnwithshrimpik" aria-label="Play Reference video by @learnwithshrimpik"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@learnwithshrimpik/video/7573598206358031623" target="_blank" rel="noopener">@learnwithshrimpik</a> · 31.9M views<span>The biggest example, for a Russian-learning app.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7561245335427878151?controls=1&amp;autoplay=1" data-title="Reference video by @lifewchloedespatie" aria-label="Play Reference video by @lifewchloedespatie"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@lifewchloedespatie/video/7561245335427878151" target="_blank" rel="noopener">@lifewchloedespatie</a> · 4.8M views<span>The same format about learning Chinese.</span></figcaption></figure>
       </div></div>
       <ol class="beats">
         <li>
@@ -366,7 +368,7 @@
     <details class="idea">
       <summary><div><b>The hot take</b><span>"Hot take: tones aren't the hardest part of Chinese."</span></div></summary>
       <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7686369171365432583?controls=1" title="Reference video by @moji.learn" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@moji.learn/video/7686369171365432583" target="_blank" rel="noopener">@moji.learn</a> · 352K views<span>No face and no talking: handwriting, then the phone.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7686369171365432583?controls=1&amp;autoplay=1" data-title="Reference video by @moji.learn" aria-label="Play Reference video by @moji.learn"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@moji.learn/video/7686369171365432583" target="_blank" rel="noopener">@moji.learn</a> · 352K views<span>No face and no talking: handwriting, then the phone.</span></figcaption></figure>
       </div></div>
       <ol class="beats">
         <li>
@@ -388,7 +390,7 @@
     <details class="idea">
       <summary><div><b>"How are you learning so fast?"</b><span>"How is your Chinese getting so good?"</span></div></summary>
       <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7665635625688763668?controls=1" title="Reference video by @moji.learn" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@moji.learn/video/7665635625688763668" target="_blank" rel="noopener">@moji.learn</a> · 330K views<span>A question, a one-word answer, then fast cuts.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7665635625688763668?controls=1&amp;autoplay=1" data-title="Reference video by @moji.learn" aria-label="Play Reference video by @moji.learn"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@moji.learn/video/7665635625688763668" target="_blank" rel="noopener">@moji.learn</a> · 330K views<span>A question, a one-word answer, then fast cuts.</span></figcaption></figure>
       </div></div>
       <ol class="beats">
         <li>
@@ -414,7 +416,7 @@
     <details class="idea">
       <summary><div><b>The 50 words</b><span>"Stop learning Chinese in textbook order."</span></div></summary>
       <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><iframe data-src="https://www.tiktok.com/player/v1/7658522978895908118?controls=1" title="Reference video by @englishbylily" allow="fullscreen" loading="lazy"></iframe><figcaption><a href="https://www.tiktok.com/@englishbylily/video/7658522978895908118" target="_blank" rel="noopener">@englishbylily</a> · 597K views<span>A closest match for the list idea: a word list that fills in as it's said. The 50 words angle itself is ours and untested.</span></figcaption></figure>
+        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7658522978895908118?controls=1&amp;autoplay=1" data-title="Reference video by @englishbylily" aria-label="Play Reference video by @englishbylily"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@englishbylily/video/7658522978895908118" target="_blank" rel="noopener">@englishbylily</a> · 597K views<span>A closest match for the list idea: a word list that fills in as it's said. The 50 words angle itself is ours and untested.</span></figcaption></figure>
       </div></div>
       <ol class="beats">
         <li>
@@ -544,10 +546,32 @@
 </footer>
 
 <script>
-// A video only loads when its idea is opened.
+// Nothing plays until someone presses Play, and closing an idea stops its video.
+document.querySelectorAll(".ref-play").forEach(function (b) {
+  b.addEventListener("click", function () {
+    var f = document.createElement("iframe");
+    f.src = b.dataset.src; f.title = b.dataset.title; f.allow = "fullscreen; autoplay";
+    f.dataset.src = b.dataset.src; f.dataset.title = b.dataset.title;
+    b.replaceWith(f);
+  });
+});
 document.querySelectorAll(".idea").forEach(function (d) {
-  function load() { if (d.open) d.querySelectorAll("iframe[data-src]").forEach(function (f) { if (!f.src) f.src = f.dataset.src; }); }
-  d.addEventListener("toggle", load); load();
+  d.addEventListener("toggle", function () {
+    if (d.open) return;
+    d.querySelectorAll(".ref iframe").forEach(function (f) {
+      var b = document.createElement("button");
+      b.className = "ref-play"; b.type = "button"; b.dataset.src = f.dataset.src; b.dataset.title = f.dataset.title;
+      b.setAttribute("aria-label", "Play " + f.dataset.title);
+      b.innerHTML = "<span>\u25B6</span>Play video";
+      b.addEventListener("click", function () {
+        var n = document.createElement("iframe");
+        n.src = b.dataset.src; n.title = b.dataset.title; n.allow = "fullscreen; autoplay";
+        n.dataset.src = b.dataset.src; n.dataset.title = b.dataset.title;
+        b.replaceWith(n);
+      });
+      f.replaceWith(b);
+    });
+  });
 });
 </script>
 </body>

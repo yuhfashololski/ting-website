@@ -2,11 +2,21 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["J57G6ARB7X.com.noahcollins.ting"],
+        "appIDs": [
+          "J57G6ARB7X.com.noahcollins.ting"
+        ],
         "components": [
-          { "/": "/invite*", "comment": "A friend's gift link: Give $5, get $5" }
+          {
+            "/": "/invite*",
+            "comment": "A friend's gift link: Give $5, get $5"
+          }
         ]
       }
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "J57G6ARB7X.com.noahcollins.ting.Clip"
     ]
   }
 }

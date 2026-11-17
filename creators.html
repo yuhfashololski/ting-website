@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Ting for Creators</title>
-<meta name="description" content="Get paid to make videos about Ting. For creators who have gone viral and look like the people learning Chinese.">
-<meta property="og:title" content="Ting for Creators">
-<meta property="og:description" content="Get paid to make videos about Ting, on an offer agreed with you.">
+<title>Ting Creator Playbook</title>
+<meta name="description" content="The Ting creator playbook: who we're talking to, what to film, how a week works and what we offer.">
+<meta property="og:title" content="Ting Creator Playbook">
+<meta property="og:description" content="Simple videos that help people finally understand spoken Chinese. Get paid, on an offer agreed with you.">
 <meta property="og:image" content="https://tingpanda.com/img/icon.png">
 <link rel="icon" href="img/favicon.png?v=2">
 <link rel="apple-touch-icon" href="img/icon.png?v=2">
@@ -16,116 +16,105 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="home.css?v=11">
 <style>
-  .c-hero { padding: 76px 0 84px; background: var(--bg-3); }
-  .c-hero .wrap { display: grid; grid-template-columns: 1fr 300px; gap: 56px; align-items: center; max-width: 1000px; }
-  .c-hero h1 { font-size: clamp(38px, 5.4vw, 62px); line-height: 1.06; letter-spacing: -1px; margin: 0 0 18px; }
+  .c-hero { padding: 72px 0 80px; background: var(--bg-3); }
+  .c-hero .wrap { display: grid; grid-template-columns: 1fr 260px; gap: 56px; align-items: center; max-width: 920px; }
+  .c-hero .kicker { font: 800 15px "Nunito", sans-serif; color: var(--coral-dark); letter-spacing: .4px; text-transform: uppercase; margin: 0 0 12px; }
+  .c-hero h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.08; letter-spacing: -1px; margin: 0 0 18px; }
   .c-hero h1 em { font-style: normal; color: var(--coral); }
-  .c-hero .lede { font-size: 20px; color: var(--ink-2); margin: 0 0 28px; max-width: 34em; }
+  .c-hero .lede { font-size: 19px; color: var(--ink-2); margin: 0 0 26px; max-width: 32em; }
   .c-hero .small { font-size: 14px; color: var(--ink-2); margin: 14px 0 0; }
-  .c-hero img { width: 100%; max-width: 280px; margin: 0 auto; }
+  .c-hero img { width: 100%; max-width: 240px; margin: 0 auto; }
 
-  .c-sec { padding: 84px 0; }
+  .toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0 0; padding: 0; list-style: none; }
+  .toc a { display: inline-block; padding: 7px 13px; border-radius: 999px; background: #fff; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font: 700 14px "Nunito", sans-serif; }
+  .toc a span { color: var(--coral); margin-right: 5px; }
+
+  .c-sec { padding: 72px 0; }
   .c-sec.tint { background: var(--bg-2); }
-  .c-sec .wrap { max-width: 1000px; }
-  .c-sec h2 { font-size: clamp(28px, 3.6vw, 40px); letter-spacing: -.6px; line-height: 1.15; margin: 0 0 34px; }
-  .c-sec > .wrap > p { color: var(--ink-2); max-width: 40em; }
+  .c-sec .wrap { max-width: 920px; }
+  .num { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--coral); color: #fff; font: 900 17px "Nunito", sans-serif; margin-right: 12px; vertical-align: 4px; }
+  .c-sec h2 { font-size: clamp(27px, 3.4vw, 38px); letter-spacing: -.6px; line-height: 1.15; margin: 0 0 14px; }
+  .c-sec .intro { color: var(--ink-2); max-width: 40em; margin: 0 0 30px; font-size: 18px; }
 
-  .terms { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .term { background: #fff; border: 1px solid var(--line); border-bottom-width: 4px; border-radius: 20px; padding: 26px 24px; }
-  .term b { display: block; font: 900 40px/1.1 "Nunito", sans-serif; color: var(--coral); margin-bottom: 10px; letter-spacing: -.5px; }
-  .term span { color: var(--ink-2); font-size: 16px; }
+  .card { background: #fff; border: 1px solid var(--line); border-bottom-width: 4px; border-radius: 20px; padding: 26px; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .card h3 { font: 800 21px/1.2 "Nunito", sans-serif; margin: 0 0 12px; }
+  .card p { color: var(--ink-2); margin: 0 0 12px; }
+  .card p:last-child { margin-bottom: 0; }
+  .card ul { margin: 0; padding-left: 20px; color: var(--ink-2); }
+  .card li { margin-bottom: 9px; }
+  .card li:last-child { margin-bottom: 0; }
+  .quotes { display: grid; gap: 10px; margin-top: 18px; }
+  .quotes q { display: block; background: var(--bg-3); border-radius: 14px; padding: 12px 16px; font-weight: 600; color: var(--ink); quotes: "\201C" "\201D"; }
 
-  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; counter-reset: s; }
-  .steps li { counter-increment: s; }
-  .steps li::before { content: counter(s); display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--coral-soft); color: var(--coral-dark); font: 900 18px "Nunito", sans-serif; margin-bottom: 14px; }
-  .steps b { display: block; font-family: "Nunito", sans-serif; font-weight: 800; font-size: 19px; margin-bottom: 4px; }
-  .steps span { color: var(--ink-2); font-size: 16px; }
+  .moment { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: m; }
+  .moment div { background: #fff; border-radius: 18px; padding: 22px; border: 1px solid var(--line); }
+  .moment b { display: block; font: 800 19px "Nunito", sans-serif; margin-bottom: 4px; }
+  .moment span { color: var(--ink-2); font-size: 16px; }
+  .note { margin: 22px 0 0; color: var(--ink-2); font-size: 16px; }
+  .note b { color: var(--ink); }
 
-  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
-  .two h2 { font-size: 30px; margin-bottom: 18px; }
-  .two ul { margin: 0; padding-left: 20px; color: var(--ink-2); }
-  .two li { margin-bottom: 10px; }
-
-  .ideas-intro { margin: -18px 0 30px; }
-  .idea { background: #fff; border: 1px solid var(--line); border-bottom-width: 4px; border-radius: 20px; margin-bottom: 18px; }
-  .idea summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 26px; }
-  .idea summary::-webkit-details-marker { display: none; }
-  .idea summary b { display: block; font: 800 22px/1.2 "Nunito", sans-serif; margin-bottom: 4px; }
-  .idea summary span { color: var(--ink-2); font-size: 16px; }
-  .idea summary::after { content: "+"; flex: none; font: 900 28px/1 "Nunito", sans-serif; color: var(--coral); }
-  .idea[open] summary::after { content: "\2212"; }
-  .beats { list-style: none; margin: 0; padding: 0 26px; counter-reset: b; }
-  .beats li { counter-increment: b; display: grid; grid-template-columns: 34px 1fr 1fr; gap: 12px 20px; padding: 20px 0; border-top: 1px solid var(--line); }
-  .beats li::before { content: counter(b); display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--coral-soft); color: var(--coral-dark); font: 900 15px "Nunito", sans-serif; }
-  .beats h4 { margin: 0 0 3px; font: 800 13px "Nunito", sans-serif; color: var(--coral-dark); }
-  .beats p { margin: 0; color: var(--ink-2); font-size: 16px; }
-  .beats .text { margin-top: 12px; }
-  .idea-notes { margin: 0; padding: 18px 26px 24px; border-top: 1px solid var(--line); color: var(--ink-2); font-size: 16px; }
-
-  .refs { padding: 0 26px 22px; }
-  .refs h4 { margin: 0 0 10px; font: 800 13px "Nunito", sans-serif; color: var(--coral-dark); }
-  .ref-row { display: flex; flex-wrap: wrap; gap: 18px; }
-  .ref { margin: 0; width: 100%; max-width: 300px; }
+  .fmt { background: #fff; border: 1px solid var(--line); border-bottom-width: 4px; border-radius: 20px; margin-bottom: 16px; }
+  .fmt summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 26px; }
+  .fmt summary::-webkit-details-marker { display: none; }
+  .fmt summary b { display: block; font: 800 21px/1.2 "Nunito", sans-serif; margin-bottom: 4px; }
+  .fmt summary span { color: var(--ink-2); font-size: 16px; }
+  .fmt summary .tag { display: inline-block; margin-left: 8px; padding: 2px 9px; border-radius: 999px; background: var(--coral-soft); color: var(--coral-dark); font: 800 12px "Nunito", sans-serif; vertical-align: 3px; }
+  .fmt summary::after { content: "+"; flex: none; font: 900 28px/1 "Nunito", sans-serif; color: var(--coral); }
+  .fmt[open] summary::after { content: "\2212"; }
+  .fmt-body { padding: 0 26px 24px; }
+  .beats { width: 100%; border-collapse: collapse; font-size: 16px; }
+  .beats td { padding: 12px 0; border-top: 1px solid var(--line); vertical-align: top; color: var(--ink-2); }
+  .beats td:first-child { width: 96px; font: 800 14px "Nunito", sans-serif; color: var(--coral-dark); padding-top: 14px; }
+  .beats td i { font-style: normal; display: block; margin-top: 4px; color: var(--ink); font-weight: 600; }
+  .fmt-why { margin: 16px 0 0; color: var(--ink-2); font-size: 16px; }
+  .fmt-why b { color: var(--ink); }
+  .refs { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 18px; }
+  .ref { margin: 0; width: 100%; max-width: 260px; }
   .ref iframe { display: block; width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: 14px; background: #000; }
   .ref-play { appearance: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; width: 100%; aspect-ratio: 9 / 16; border: 0; border-radius: 14px; background: #231f1c; color: #fff; font: 800 17px "Nunito", sans-serif; cursor: pointer; }
-  .ref-play span { font-size: 36px; line-height: 1; }
+  .ref-play span { font-size: 34px; line-height: 1; }
   .ref figcaption { margin-top: 8px; font-size: 14px; color: var(--ink-2); }
   .ref figcaption a { color: var(--coral-dark); font-weight: 700; }
-  .ref figcaption span { display: block; margin-top: 3px; }
-  .ref-none { margin: 0; color: var(--ink-2); font-size: 16px; }
 
-  .hook-bank { margin-top: 34px; }
-  .hook-bank h3 { font: 800 24px/1.2 "Nunito", sans-serif; margin: 0 0 8px; }
-  .hook-bank > p { color: var(--ink-2); margin: 0 0 20px; max-width: 46em; }
-  .hook-groups { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  .hook-groups > div { background: #fff; border: 1px solid var(--line); border-radius: 20px; padding: 22px 24px; }
-  .hook-groups h4 { margin: 0 0 10px; font: 800 17px "Nunito", sans-serif; color: var(--coral-dark); }
-  .hook-groups ul { list-style: none; margin: 0; padding: 0; }
-  .hook-groups li { margin: 0 0 10px; color: var(--ink-2); font-size: 16px; }
-  .hook-groups li:last-child { margin-bottom: 0; }
+  .hooks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; margin: 0; padding: 0; counter-reset: h; }
+  .hooks li { counter-increment: h; background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px 14px 50px; position: relative; font-weight: 600; }
+  .hooks li::before { content: counter(h); position: absolute; left: 14px; top: 13px; width: 24px; height: 24px; border-radius: 50%; background: var(--coral-soft); color: var(--coral-dark); display: grid; place-items: center; font: 900 13px "Nunito", sans-serif; }
 
-  .tips-intro { margin: -18px 0 34px; }
-  .tips { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  .tip-group { background: var(--bg-2); border-radius: 20px; padding: 26px; }
-  .tip-group h3 { font: 800 22px/1.2 "Nunito", sans-serif; margin: 0 0 14px; }
-  .tip-group ul { list-style: none; margin: 0; padding: 0; }
-  .tip-group li { margin: 0 0 16px; color: var(--ink-2); font-size: 16px; }
-  .tip-group li:last-child { margin-bottom: 0; }
-  .tip-group li b { display: block; color: var(--ink); font-weight: 700; }
-  .tip-group li i { font-style: normal; font-size: 14px; }
-  .tips-note { margin: 22px 0 0; font-size: 14px; }
-  .tips-note a { color: var(--coral-dark); font-weight: 600; }
+  .dodont h3.do { color: #2f8a57; }
+  .dodont h3.dont { color: var(--coral-dark); }
 
-  .ugc { display: grid; grid-template-columns: 170px 1fr; gap: 44px; align-items: center; }
-  .ugc img { width: 150px; margin: 0 auto; }
-  .ugc h2 { margin-bottom: 12px; }
-  .ugc p { color: var(--ink-2); margin: 0 0 20px; }
-  .btn.ghost { background: #fff; color: var(--coral-dark); box-shadow: none; border: 2px solid var(--coral); }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; counter-reset: s; }
+  .steps li { counter-increment: s; }
+  .steps li::before { content: counter(s); display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--coral-soft); color: var(--coral-dark); font: 900 17px "Nunito", sans-serif; margin-bottom: 12px; }
+  .steps b { display: block; font: 800 18px "Nunito", sans-serif; margin-bottom: 4px; }
+  .steps span { color: var(--ink-2); font-size: 16px; }
+  .week { margin-top: 30px; }
 
-  .c-sec.faq { max-width: none; padding: 84px 0; }
+  .terms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .term b { display: block; font: 900 26px/1.15 "Nunito", sans-serif; color: var(--coral); margin-bottom: 6px; }
+  .term span { color: var(--ink-2); font-size: 16px; }
+
+  .c-sec.faq { max-width: none; padding: 72px 0; }
   .c-sec.faq .wrap { max-width: 760px; }
-  .c-sec.faq h2 { text-align: left; font-size: clamp(28px, 3.6vw, 40px); }
+  .c-sec.faq h2 { text-align: left; }
 
-  .apply { background: var(--coral); color: #fff; text-align: center; padding: 84px 0; }
-  .apply h2 { font-size: clamp(32px, 4.4vw, 48px); letter-spacing: -.8px; margin: 0 0 12px; }
-  .apply p { margin: 0 auto 26px; max-width: 34em; }
+  .apply { background: var(--coral); color: #fff; text-align: center; padding: 80px 0; }
+  .apply h2 { font-size: clamp(30px, 4.2vw, 46px); letter-spacing: -.8px; margin: 0 0 12px; }
+  .apply p { margin: 0 auto 24px; max-width: 34em; }
   .apply .btn { background: #fff; color: var(--coral-dark); box-shadow: 0 5px 0 var(--coral-dark); }
   .apply .mail { font-size: 15px; margin: 18px auto 0; }
   .apply .mail a { color: #fff; font-weight: 700; }
 
-  @media (max-width: 900px) {
-    .c-hero { padding: 48px 0 56px; }
-    .c-hero .wrap { grid-template-columns: 1fr; gap: 32px; }
-    .c-hero img { max-width: 190px; }
-    .c-sec, .c-sec.faq, .apply { padding: 60px 0; }
-    .terms, .two { grid-template-columns: 1fr; }
-    .two { gap: 44px; }
+  @media (max-width: 860px) {
+    .c-hero { padding: 44px 0 52px; }
+    .c-hero .wrap { grid-template-columns: 1fr; gap: 28px; }
+    .c-hero img { max-width: 160px; margin: 0; order: -1; }
+    .c-sec, .apply { padding: 56px 0; }
+    .two, .moment, .hooks, .terms { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr 1fr; }
-    .tips, .hook-groups { grid-template-columns: 1fr; }
-    .beats li { grid-template-columns: 34px 1fr; }
-    .beats li > div + div { grid-column: 2; }
-    .ugc { grid-template-columns: 1fr; gap: 20px; }
-    .ugc img { width: 120px; margin: 0; }
+    .beats td:first-child { width: 76px; }
+    .fmt summary, .fmt-body { padding-left: 18px; padding-right: 18px; }
   }
   @media (max-width: 480px) { .steps { grid-template-columns: 1fr; } }
 </style>
@@ -136,11 +125,11 @@
   <div class="wrap">
     <a class="brand" href="./"><img src="img/icon.png" alt=""><img class="word" src="img/wordmark.png" alt="Ting"></a>
     <div class="links">
-      <a href="#terms">The offer</a>
-      <a href="#how">How It Works</a>
-      <a href="#ideas">Video Ideas</a>
-      <a href="#what-works">What Works</a>
-      <a href="#questions">Questions</a>
+      <a href="#who">Who</a>
+      <a href="#formats">What to film</a>
+      <a href="#hooks">Hooks</a>
+      <a href="#how">How it works</a>
+      <a href="#offer">The offer</a>
     </div>
     <div class="cta"><a class="btn" href="#apply">Apply</a></div>
   </div>
@@ -149,391 +138,249 @@
 <header class="c-hero">
   <div class="wrap">
     <div>
-      <h1>Make videos about Ting. <em>Get paid, on an offer agreed with you.</em></h1>
-      <p class="lede">Ting teaches Mandarin through short clips from real Chinese videos. If you've already had videos go viral, and you look like the people learning Chinese, I'd love to work with you long term.</p>
+      <p class="kicker">Ting creator playbook</p>
+      <h1>Short videos that help people <em>finally understand spoken Chinese.</em></h1>
+      <p class="lede">Everything you need is on this one page: who we're talking to, what to film, how a week works and what you get. It takes about five minutes to read. Keep it open while you film.</p>
       <a class="btn big" href="#apply">Apply to join</a>
-      <p class="small">Goes straight to me (Noah).</p>
+      <p class="small">Goes straight to me, Noah. I built Ting.</p>
+      <ul class="toc">
+        <li><a href="#who"><span>1</span>Who</a></li>
+        <li><a href="#moment"><span>2</span>The one rule</a></li>
+        <li><a href="#formats"><span>3</span>What to film</a></li>
+        <li><a href="#hooks"><span>4</span>Hooks</a></li>
+        <li><a href="#rules"><span>5</span>Do and don't</a></li>
+        <li><a href="#how"><span>6</span>How it works</a></li>
+        <li><a href="#offer"><span>7</span>The offer</a></li>
+      </ul>
     </div>
     <img src="img/ting-celebrate.png" alt="Ting the panda, jumping with both arms up">
   </div>
 </header>
 
-<section class="c-sec" id="terms">
+<section class="c-sec" id="who">
   <div class="wrap">
-    <h2>The offer</h2>
-    <div class="terms">
-      <div class="term"><b>Paid</b><span>The offer varies by creator. It depends on your audience, your results so far and how many videos you make.</span></div>
-      <div class="term"><b>Grows with you</b><span>When your videos take off, the deal can grow with them.</span></div>
-      <div class="term"><b>Ting Pro</b><span>Full access to the app, so you can try it properly before you make anything.</span></div>
-      <div class="term"><b>Direct</b><span>You deal straight with me (Noah).</span></div>
+    <h2><span class="num">1</span>Who we're talking to</h2>
+    <p class="intro">Ting is an iPhone app that teaches Mandarin through a feed of short, real Chinese clips. Each clip uses words the learner mostly knows, with one new word at a time. Tap any word for its pinyin and meaning. Every video speaks to one person.</p>
+    <div class="two">
+      <div class="card">
+        <h3>The rusty middle learner</h3>
+        <ul>
+          <li>Learned Chinese before (school, uni, a class, an app), then stopped.</li>
+          <li>Remembers lots of words, but can't follow people talking at normal speed.</li>
+          <li>Dramas are too hard. Beginner videos are too easy and a bit boring. Nothing sits in the middle.</li>
+          <li>Thinks they don't have time for a TV show, but scrolls more than they'd like.</li>
+          <li>Wants about 15 minutes a day, and the feeling of "I got better at listening today".</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>In their own words</h3>
+        <p>Use these lines. When they hear their own thought, they stop scrolling.</p>
+        <div class="quotes">
+          <q>I know the words, I just can't hear them when people talk.</q>
+          <q>Dramas are too fast and beginner videos put me to sleep.</q>
+          <q>I used to be decent at Chinese.</q>
+          <q>I want to know I'm actually getting better.</q>
+        </div>
+      </div>
+    </div>
+    <p class="note"><b>What we promise them:</b> the missing middle. Real Chinese that's just hard enough, about 15 minutes a day. Never shame anyone for scrolling. Show them a better use of 15 minutes of it.</p>
+  </div>
+</section>
+
+<section class="c-sec tint" id="moment">
+  <div class="wrap">
+    <h2><span class="num">2</span>The one rule: show the click</h2>
+    <p class="intro">People download when they see the app working on a real phone, not when they're told about it. Every video, in every format, shows this moment:</p>
+    <div class="moment">
+      <div><b>A real clip plays</b><span>Someone speaking Chinese at normal speed, inside Ting.</span></div>
+      <div><b>You tap a word</b><span>The pinyin and meaning pop up.</span></div>
+      <div><b>It clicks</b><span>Suddenly you understand what they actually said.</span></div>
+    </div>
+    <p class="note"><b>Get to the app within 15 seconds.</b> Screen-record on your iPhone (Control Centre, then Screen Recording) using your own Ting account, so it shows your real words and progress.</p>
+  </div>
+</section>
+
+<section class="c-sec" id="formats">
+  <div class="wrap">
+    <h2><span class="num">3</span>What to film</h2>
+    <p class="intro">Four formats that already work for Ting or for apps like it. Start with the first two, post a few of each, and we'll double down on whatever wins. Change anything so it sounds like you, and only say what's true for you.</p>
+
+    <details class="fmt" open>
+      <summary><div><b>Hook + demo <span class="tag">Start here</span></b><span>A two-second reaction from you, then the app.</span></div></summary>
+      <div class="fmt-body">
+        <table class="beats">
+          <tr><td>0 to 3 s</td><td>You, looking straight into the camera, reacting: surprised, relieved, "wait, what?". Real time, no slow motion. A quick zoom in at the end of the reaction.<i>Hook text: one from the hook list, typed in TikTok or Instagram.</i></td></tr>
+          <tr><td>3 to 12 s</td><td>Hard cut to your screen recording. A clip plays, you tap a word, the meaning shows, then a quiz you get right.</td></tr>
+        </table>
+        <p class="fmt-why"><b>Why it works:</b> it's cheap to film in batches, and the app is on screen by second three.</p>
+      </div>
+    </details>
+
+    <details class="fmt">
+      <summary><div><b>Can you follow this? <span class="tag">Made for this audience</span></b><span>A listening test: hear it once with no subtitles, then again with them.</span></div></summary>
+      <div class="fmt-body">
+        <table class="beats">
+          <tr><td>0 to 2 s</td><td>You, to camera, a little smug or a little nervous.<i>Hook text: "Can you follow this? Most people who studied Chinese can't."</i></td></tr>
+          <tr><td>2 to 9 s</td><td>A real clip at full speed, with the subtitles hidden. Easy words, real speed. I'll send you ready-made clips for this.</td></tr>
+          <tr><td>9 to 17 s</td><td>The same clip again, with every word, its pinyin and its meaning lighting up as it's said.</td></tr>
+          <tr><td>End</td><td>Ting on your phone for a second or two.<i>Say or type: "Comment how much you caught."</i></td></tr>
+        </table>
+        <p class="fmt-why"><b>Why it works:</b> it is exactly this person's problem. They know every word and still miss it at speed, and the replay shows them they were closer than they thought. The comments fill up with scores.</p>
+      </div>
+    </details>
+
+    <details class="fmt">
+      <summary><div><b>"This is just not fair"</b><span>A big feeling, then the app. No talking.</span></div></summary>
+      <div class="fmt-body">
+        <table class="beats">
+          <tr><td>0 to 2 s</td><td>Tight close-up, frustrated, close to tears. Keep it under two seconds.<i>Text, the whole video: "This is just not fair. How do people understand Chinese?"</i></td></tr>
+          <tr><td>2 to 8 s</td><td>Hard cut to your phone with a Ting clip playing, sound up. Tap a word, the meaning pops up.</td></tr>
+          <tr><td>End</td><td>Stay on the phone a beat after the meaning appears. Don't cut back for a speech.</td></tr>
+        </table>
+        <p class="fmt-why"><b>Why it works:</b> versions of this for other language apps reached millions of views in 5 to 15 seconds. Go big with the feeling. Calm versions don't travel.</p>
+        <div class="refs">
+          <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7573598206358031623?controls=1&amp;autoplay=1" data-title="Reference video by @learnwithshrimpik" aria-label="Play reference video by @learnwithshrimpik"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@learnwithshrimpik/video/7573598206358031623" target="_blank" rel="noopener">@learnwithshrimpik</a> · 31.9M views, for a Russian app</figcaption></figure>
+          <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7561245335427878151?controls=1&amp;autoplay=1" data-title="Reference video by @lifewchloedespatie" aria-label="Play reference video by @lifewchloedespatie"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@lifewchloedespatie/video/7561245335427878151" target="_blank" rel="noopener">@lifewchloedespatie</a> · 4.8M views, about Chinese</figcaption></figure>
+        </div>
+      </div>
+    </details>
+
+    <details class="fmt">
+      <summary><div><b>"I wish I had this sooner"</b><span>Textbook pain, then the app as the relief. Hands only, no face needed.</span></div></summary>
+      <div class="fmt-body">
+        <table class="beats">
+          <tr><td>0 to 3 s</td><td>Hands on a dense Chinese textbook or notebook, flipping or writing.<i>"I wish I had this sooner 😭"</i></td></tr>
+          <tr><td>3 to 5 s</td><td>Phone held over the textbook, Ting playing a clip.<i>"It's like TikTok but for learning Chinese"</i></td></tr>
+          <tr><td>5 to 7.5 s</td><td>Tap a word, the meaning appears.<i>"Tap any word you don't know"</i></td></tr>
+          <tr><td>7.5 to 9.5 s</td><td>A new word card.<i>"One new word at a time"</i></td></tr>
+          <tr><td>9.5 to 12.5 s</td><td>The quiz, then Correct.<i>"Then it checks you actually got it"</i></td></tr>
+        </table>
+        <p class="fmt-why"><b>Why it works:</b> a Japanese app's version got 74,000 views on an account that usually gets about 1,400, with a high save rate.</p>
+        <div class="refs">
+          <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7671626570208955655?controls=1&amp;autoplay=1" data-title="Reference video by @kiku_lang" aria-label="Play reference video by @kiku_lang"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@kiku_lang/video/7671626570208955655" target="_blank" rel="noopener">@kiku_lang</a> · 74K views, for a Japanese app</figcaption></figure>
+        </div>
+      </div>
+    </details>
+
+    <p class="note"><b>Your own idea, or a true story about your Chinese?</b> Try it. Find a video already doing well in your niche and change it enough to make it yours. When something new starts trending, I'll send it to you.</p>
+  </div>
+</section>
+
+<section class="c-sec tint" id="hooks">
+  <div class="wrap">
+    <h2><span class="num">4</span>Hooks to start with</h2>
+    <p class="intro">The first three seconds decide everything. Pick one, type it as text in TikTok or Instagram, and make sure the video pays it off.</p>
+    <ol class="hooks">
+      <li>You know the words. You just can't hear them.</li>
+      <li>Beginner videos too easy, dramas too hard? This is the middle.</li>
+      <li>Stopped learning Chinese? You remember more than you think.</li>
+      <li>I used to study Chinese. Now I can't follow a single conversation.</li>
+      <li>15 minutes of this instead of Instagram, every day</li>
+      <li>The step between Chinese cartoons and Chinese TV</li>
+      <li>Can you follow this? Most people who studied Chinese can't.</li>
+      <li>I wish I found this before I gave up on Chinese</li>
+      <li>Wait, Chinese lessons can be YouTube clips?</li>
+      <li>POV: every word in the video is tappable</li>
+    </ol>
+  </div>
+</section>
+
+<section class="c-sec" id="rules">
+  <div class="wrap">
+    <h2><span class="num">5</span>Do and don't</h2>
+    <div class="two dodont">
+      <div class="card">
+        <h3 class="do">Do</h3>
+        <ul>
+          <li>Show the real app on your phone, every time.</li>
+          <li>Do something in the first second: a reaction, a prop, a real feeling.</li>
+          <li>Look into the camera on the hook, and keep it fast.</li>
+          <li>Add hook text inside TikTok or Instagram, not in an editor.</li>
+          <li>Use a sound that's trending right now.</li>
+          <li>End with "Search ‘Ting - Learn Chinese Fast’ on the App Store", or point to your bio link.</li>
+          <li><b>Label it as paid:</b> TikTok's "Paid partnership" setting, Instagram's "Paid partnership" label, or #ad. It's the law in Australia and the US.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="dont">Don't</h3>
+        <ul>
+          <li>Promise fluency or speed, like "fluent in 3 months" or "10x faster".</li>
+          <li>Call Ting "free". It has a paid plan with a trial.</li>
+          <li>Burn text into the video in an editing app.</li>
+          <li>Show other apps' logos or put other apps down by name.</li>
+          <li>Offer anything in exchange for App Store ratings or reviews.</li>
+          <li>Download and repost the original YouTube videos behind Ting's clips. Show them inside Ting instead.</li>
+          <li>Film other people without their OK.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="c-sec tint" id="how">
   <div class="wrap">
-    <h2>How it works</h2>
+    <h2><span class="num">6</span>How it works</h2>
+    <p class="intro">You won't be left on your own. I find what's working across language-learning TikTok and send it to you, so you're never guessing.</p>
     <ol class="steps">
-      <li><b>Apply</b><span>Email your channels and a line about your audience.</span></li>
-      <li><b>Try Ting</b><span>Get access to Ting Pro, so you're talking about something you've used.</span></li>
-      <li><b>Agree your offer</b><span>We'll agree your pay and video count together before you start.</span></li>
-      <li><b>Make your videos</b><span>Post in your own style, one or two a day, and I'll give you feedback within 24 hours.</span></li>
+      <li><b>Apply</b><span>Send your channels and your best-performing video.</span></li>
+      <li><b>Try Ting</b><span>Get full Ting Pro access and use it for a few days. Real reactions make the best videos.</span></li>
+      <li><b>Agree your offer</b><span>We agree your pay and video count together before you start.</span></li>
+      <li><b>Get your kit</b><span>Your own App Store link for your bio, screen recordings, and ready-made listening clips.</span></li>
     </ol>
-  </div>
-</section>
-
-<section class="c-sec">
-  <div class="wrap two">
-    <div>
-      <h2>Who it's for</h2>
-      <ul>
-        <li>Chinese teachers and tutors</li>
-        <li>People sharing their own journey learning Mandarin</li>
-        <li>Heritage speakers reconnecting with the language</li>
-        <li>Creators covering Chinese dramas, food, travel or culture</li>
-        <li>Language-learning creators of any kind</li>
-      </ul>
-    </div>
-    <div>
-      <h2>A few simple rules</h2>
-      <ul>
-        <li>Say it's a paid partnership, the way your platform and country require.</li>
-        <li>Only say what's true. No promises of fluency by a certain date.</li>
-        <li>Never offer anything in exchange for App Store ratings or reviews.</li>
-        <li>Show Ting on your screen, but don't download and repost the original YouTube videos behind its clips.</li>
-      </ul>
+    <div class="two week">
+      <div class="card">
+        <h3>Your week</h3>
+        <ul>
+          <li><b>Batch film</b> once or twice a week: several hooks and screen recordings in one go.</li>
+          <li><b>Post about once a day</b>, when your audience is most active.</li>
+          <li><b>Send me each link.</b> You'll get feedback within 24 hours: what to keep, what to cut, which hook to try next.</li>
+          <li><b>A 15-minute call every two weeks</b> to look at what's working and pick the next formats.</li>
+          <li><b>When a video wins, remake it</b> 3 to 5 times with a new hook or a new clip. Winning formats usually stay hot for a week or two.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What we look at</h3>
+        <ul>
+          <li><b>Downloads from your link</b>, and comments asking about the app. A video with 10,000 views and 100 downloads beats a million views and none.</li>
+          <li><b>3-second hold.</b> If most people are still watching after 3 seconds, the hook works.</li>
+          <li><b>Not one video.</b> One creator at another app took 25 videos to pass 10,000 views. Several videos in one format passing 10,000 is the sign to keep going.</li>
+          <li><b>New account?</b> Warm it up for 5 to 7 days first: watch, like and comment on Chinese-learning videos, then start posting.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="c-sec tint" id="ideas">
+<section class="c-sec" id="offer">
   <div class="wrap">
-    <h2>Video ideas to start from</h2>
-    <p class="ideas-intro">These are starting points, not lines to read out. Change anything so it sounds like you, and only keep what's true for you. For the parts that show the app, ask me (Noah) for a screen recording to use. Each idea includes a real video to learn from. For more examples, with a version for each audience, open the <a href="formats.html" style="color:var(--coral-dark);font-weight:700">Ting Format Finder</a>.</p>
-
-
-    <details class="idea">
-      <summary><div><b>The C-drama subtitle trap</b><span>"Is it just me, or are subtitles actually the biggest trap?"</span></div></summary>
-      <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1&amp;autoplay=1" data-title="Reference video by @studyingwithtierra" aria-label="Play Reference video by @studyingwithtierra"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Borrow the format: satisfying hands, a relatable complaint, then a quick look at the app. This one is for a study app.</span></figcaption></figure>
-      </div></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>Close-up, talking to camera. You're holding a new phone or tablet, with a corner of the clear screen protector pinched between your fingers.</p><div class="text"><h4>On-screen text</h4><p>just me / subtitles / biggest trap?</p></div></div>
-          <div><h4>Say</h4><p>"Is it just me, or are subtitles actually the biggest trap?"</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Slowly peel the protector back, close to the mic. Cut to you looking frustrated, with a drama playing on the TV behind you.</p><div class="text"><h4>On-screen text</h4><p>watching shows / barely any vocab growth / real TV way too fast / textbooks boring / like me,</p></div></div>
-          <div><h4>Say</h4><p>"You spend hours watching C-dramas, but you're just reading English. Barely any vocab growth. Real Chinese is way too fast and textbooks are just boring. If you're stuck like me,"</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Screen recording of Ting opening, with a clip playing.</p><div class="text"><h4>On-screen text</h4><p>how I survive / tingpanda.com / real Chinese clips</p></div></div>
-          <div><h4>Say</h4><p>"this is how I survive. Ting lets you watch real Chinese videos with interactive words."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Screen recording. Tap a word in the subtitles: the pinyin and English pop up, and it's saved to your flashcards. Add a ding in the edit.</p><div class="text"><h4>On-screen text</h4><p>tap any word / pinyin / auto-flashcards / remember it / HSK levels</p></div></div>
-          <div><h4>Say</h4><p>"Just tap a word for the pinyin and meaning. It automatically saves it to your flashcards, so you actually remember it. You can even filter by HSK level, so it's not overwhelming."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Back to camera, looking relieved, with Ting open on your phone.</p><div class="text"><h4>On-screen text</h4><p>A few words from your own line.</p></div></div>
-          <div><h4>Say</h4><p>One true thing Ting has done for you, like a word you now catch when you hear it.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Point to where the Save button sits on TikTok.</p><div class="text"><h4>On-screen text</h4><p>Save this / study sesh / follow for more</p></div></div>
-          <div><h4>Say</h4><p>"Save this for your next study sesh and follow for more tips."</p></div>
-        </li>
-      </ol>
-      <p class="idea-notes"><strong>Filming notes:</strong> use natural light facing you, with a good mic close to the phone for the peel. Keep the cuts fast during the demo, and highlight key words in the captions in red or yellow. Start on a low-fi, slightly frustrated beat, then switch to a brighter lo-fi beat when the app appears.</p>
-    </details>
-
-    <details class="idea">
-      <summary><div><b>The dictionary loop</b><span>"Is it just me, or do teachers expect us to look up every word manually?"</span></div></summary>
-      <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1&amp;autoplay=1" data-title="Reference video by @studyingwithtierra" aria-label="Play Reference video by @studyingwithtierra"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Same format as the subtitle trap: a complaint over something satisfying, then the app.</span></figcaption></figure>
-      </div></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>Close-up, talking to camera. You look exhausted, and drop a thick Chinese dictionary onto the desk with a heavy thud.</p><div class="text"><h4>On-screen text</h4><p>is it just me / dictionary loop / = hell</p></div></div>
-          <div><h4>Say</h4><p>"Is it just me, or do teachers expect us to look up every word manually?"</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Click a multi-colour pen loudly while acting out the cycle of pausing, looking up and forgetting. Flip through the pages frantically, with a C-drama playing behind you.</p><div class="text"><h4>On-screen text</h4><p>pause video / open dictionary / type radical / forget context / repeat 100x / HSK plateau</p></div></div>
-          <div><h4>Say</h4><p>"The manual dictionary loop is literally hell. You pause the video, open your dictionary app, type the strokes, forget the sentence, start over. Hours of work for a 30-second Douyin clip. It's not learning, it's torture."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Abrupt cut to a crisp screen recording. Your thumb scrolls through food videos in Ting.</p><div class="text"><h4>On-screen text</h4><p>how I survive / native content</p></div></div>
-          <div><h4>Say</h4><p>"Since I can't pause life, I use Ting instead."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Fast montage. Your thumb taps a character, and the pinyin and meaning pop up. In the edit, the word flies into a Saved icon.</p><div class="text"><h4>On-screen text</h4><p>tap to define / auto-flashcards / no manual entry</p></div></div>
-          <div><h4>Say</h4><p>"I just scroll through the feed, see a word I don't know, tap it, and it shows the pinyin and saves it to my flashcards instantly. No typing, no switching apps, just vibes."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Back to camera, leaning back and relaxed, watching a video on your phone with no dictionary in sight.</p><div class="text"><h4>On-screen text</h4><p>A few words from your own line.</p></div></div>
-          <div><h4>Say</h4><p>One true thing that's changed for you, like how long it's been since you opened a dictionary mid-video.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Point to an animated Save icon. End on the Ting logo on a clean background.</p><div class="text"><h4>On-screen text</h4><p>Save this / HSK 4, 5, 6 tips</p></div></div>
-          <div><h4>Say</h4><p>"Save this if you're stuck at an HSK plateau, and follow for more."</p></div>
-        </li>
-      </ol>
-    </details>
-
-    <details class="idea">
-      <summary><div><b>The HSK 4 wall</b><span>"POV: You hit the HSK 4 wall and gave up."</span></div></summary>
-      <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7694815793871179028?controls=1&amp;autoplay=1" data-title="Reference video by @studyingwithtierra" aria-label="Play Reference video by @studyingwithtierra"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@studyingwithtierra/video/7694815793871179028" target="_blank" rel="noopener">@studyingwithtierra</a> · 486K views<span>Same format again: a relatable complaint, then the app.</span></figcaption></figure>
-      </div></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>Close-up, talking to camera. You look exhausted and hold a thick HSK 4 textbook, while one hand clicks a mechanical keyboard just out of frame.</p><div class="text"><h4>On-screen text</h4><p>POV: You hit the HSK 4 wall and gave up.</p></div></div>
-          <div><h4>Say</h4><p>"Is it just me, or is HSK 4 a brick wall?"</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Fast cuts between your face and extreme close-ups of fingers on creamy-sounding keys. Behind you, a messy desk with Chinese characters on post-its.</p><div class="text"><h4>On-screen text</h4><p>textbooks are too dry / real Chinese is 100x speed / how do people learn this??</p></div></div>
-          <div><h4>Say</h4><p>"Textbooks never prepare you. Native content feels like another language, and it's way too fast."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Clean transition from your face to a vertical screen recording of the Ting feed, showing vlogs with Chinese subtitles.</p><div class="text"><h4>On-screen text</h4><p>how I actually survive / native immersion</p></div></div>
-          <div><h4>Say</h4><p>"This is what I use now: the Ting app."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Zoom in on a fast-talking vlogger in the recording. Tap a hard word in the subtitles, and the pinyin and English pop up. In the edit, the word flies into a saved icon.</p><div class="text"><h4>On-screen text</h4><p>taps = definitions / auto-convert to flashcard / SRS magic</p></div></div>
-          <div><h4>Say</h4><p>"Just scroll, and when you don't know a word, tap it. You get the pinyin and meaning, and it becomes a flashcard to help it stick."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Back to you, looking relaxed, with a C-drama on a tablet behind you and no textbook in sight.</p><div class="text"><h4>On-screen text</h4><p>A few words from your own line.</p></div></div>
-          <div><h4>Say</h4><p>One true thing that's changed for you, like a line you caught in a show without looking down.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Point to the Ting logo on your phone and give a thumbs up.</p><div class="text"><h4>On-screen text</h4><p>Save this / Link in bio?</p></div></div>
-          <div><h4>Say</h4><p>"Save this for your next study session, and follow for more tips."</p></div>
-        </li>
-      </ol>
-      <p class="idea-notes"><strong>Filming notes:</strong> use soft desk lighting, an external mic close to the keyboard, and a tripod for steady phone shots. Start the audio of each beat just before the picture changes to keep the momentum up. Use lo-fi beats with a steady rhythm that matches the tapping.</p>
-    </details>
-
-    <details class="idea">
-      <summary><div><b>The crying learner</b><span>"This is just not fair. How do people understand Chinese?"</span></div></summary>
-      <div class="refs"><h4>Reference videos</h4><div class="ref-row">
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7573598206358031623?controls=1&amp;autoplay=1" data-title="Reference video by @learnwithshrimpik" aria-label="Play Reference video by @learnwithshrimpik"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@learnwithshrimpik/video/7573598206358031623" target="_blank" rel="noopener">@learnwithshrimpik</a> · 31.9M views<span>The biggest example, for a Russian-learning app.</span></figcaption></figure>
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7561245335427878151?controls=1&amp;autoplay=1" data-title="Reference video by @lifewchloedespatie" aria-label="Play Reference video by @lifewchloedespatie"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@lifewchloedespatie/video/7561245335427878151" target="_blank" rel="noopener">@lifewchloedespatie</a> · 4.8M views<span>The same format about learning Chinese.</span></figcaption></figure>
-      </div></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>Tight close-up, on the edge of tears. Smudged mascara is what the big versions use. Hold for under 2 seconds.</p><div class="text"><h4>On-screen text</h4><p>This is just not fair. How do people understand Chinese?</p></div></div>
-          <div><h4>Say</h4><p>Nothing. Let your face do it.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Hard cut to your phone in your hand, with a Ting clip playing and the sound up. Keep the same text on screen the whole video.</p><div class="text"><h4>On-screen text</h4><p>Same line, unchanged.</p></div></div>
-          <div><h4>Say</h4><p>Nothing. The clip is the sound.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Tap a word. The pinyin and meaning pop up.</p><div class="text"><h4>On-screen text</h4><p>Same line, unchanged.</p></div></div>
-          <div><h4>Say</h4><p>Nothing, or repeat the word once, badly.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>End on the phone, a beat after the meaning appears. Don't cut back for a speech.</p><div class="text"><h4>On-screen text</h4><p>Same line, unchanged.</p></div></div>
-          <div><h4>Say</h4><p>Nothing. Put Ting in your caption, with your paid partnership label on.</p></div>
-        </li>
-      </ol>
-      <p class="idea-notes"><strong>Why this one:</strong> This is the strongest format we found for language apps. Versions for CapWords and Airlearn reached 4.7M, 5.4M and 2.9M views, with up to 163,000 shares, in 5 to 15 seconds. It works because the feeling is big and the demo is instant. Go big with the emotion: calm versions don't travel.</p>
-    </details>
-
-    <details class="idea">
-      <summary><div><b>Guess the word</b><span>"Three clips. One word. No English. What does it mean?"</span></div></summary>
-      <div class="refs"><h4>Reference video</h4><p class="ref-none">This one is our own idea, so there isn't a proven example yet. If you try it, you'd be one of the first.</p></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>Your phone, playing the first of three Ting clips that use the same word. Ask me for these: I can send any word, and 喝 is a good first one because you can see people drinking.</p><div class="text"><h4>On-screen text</h4><p>3 clips / 1 word / what does 喝 mean?</p></div></div>
-          <div><h4>Say</h4><p>Nothing. Let the clips play, about 2 seconds each.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Clips two and three, cut fast.</p><div class="text"><h4>On-screen text</h4><p>clip 2 / clip 3 / guess in the comments</p></div></div>
-          <div><h4>Say</h4><p>"Got it? Comment your guess before I tell you."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Tap the word in Ting. The meaning pops up.</p><div class="text"><h4>On-screen text</h4><p>喝 hē = drink</p></div></div>
-          <div><h4>Say</h4><p>"It means drink. You just worked that out with no flashcard."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Back to you, or stay on the app.</p><div class="text"><h4>On-screen text</h4><p>Ting / real clips, one new word at a time</p></div></div>
-          <div><h4>Say</h4><p>"That's how Ting teaches you. Follow and I'll test you on another one."</p></div>
-        </li>
-      </ol>
-      <p class="idea-notes"><strong>Why this one:</strong> It makes the viewer do something, and every guess is a comment. It also shows what makes Ting different in about 10 seconds.</p>
-    </details>
-
-    <details class="idea">
-      <summary><div><b>The hot take</b><span>"Hot take: tones aren't the hardest part of Chinese."</span></div></summary>
-      <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7686369171365432583?controls=1&amp;autoplay=1" data-title="Reference video by @moji.learn" aria-label="Play Reference video by @moji.learn"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@moji.learn/video/7686369171365432583" target="_blank" rel="noopener">@moji.learn</a> · 352K views<span>No face and no talking: handwriting, then the phone.</span></figcaption></figure>
-      </div></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>Your hand writing characters in a notebook, filmed from above. No face needed.</p><div class="text"><h4>On-screen text</h4><p>HOT TAKE: tones aren't the hardest part of Chinese</p></div></div>
-          <div><h4>Say</h4><p>Nothing. Quiet music and the sound of the pen.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Pick up your phone and open Ting. A real clip plays with pinyin above each word.</p><div class="text"><h4>On-screen text</h4><p>It's understanding people at normal speed</p></div></div>
-          <div><h4>Say</h4><p>Nothing, or say the line if you prefer.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Tap one or two words, then swipe to the next clip.</p><div class="text"><h4>On-screen text</h4><p>so I learn from clips I can almost follow</p></div></div>
-          <div><h4>Say</h4><p>Nothing.</p></div>
-        </li>
-      </ol>
-      <p class="idea-notes"><strong>Why this one:</strong> A hiragana version of this got 121,000 views, about 165 times that account's usual, with no face and no talking. Use your own take, as long as you believe it, and expect people to argue with you in the comments.</p>
-    </details>
-
-    <details class="idea">
-      <summary><div><b>"How are you learning so fast?"</b><span>"How is your Chinese getting so good?"</span></div></summary>
-      <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7665635625688763668?controls=1&amp;autoplay=1" data-title="Reference video by @moji.learn" aria-label="Play Reference video by @moji.learn"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@moji.learn/video/7665635625688763668" target="_blank" rel="noopener">@moji.learn</a> · 330K views<span>A question, a one-word answer, then fast cuts.</span></figcaption></figure>
-      </div></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>An open textbook or a page of notes.</p><div class="text"><h4>On-screen text</h4><p>"How is your Chinese getting better so fast?"</p></div></div>
-          <div><h4>Say</h4><p>Nothing. Quiet music.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Cut to Ting on your phone, with a clip playing.</p><div class="text"><h4>On-screen text</h4><p>"Ting"</p></div></div>
-          <div><h4>Say</h4><p>Nothing.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Same shot.</p><div class="text"><h4>On-screen text</h4><p>"But how???"</p></div></div>
-          <div><h4>Say</h4><p>Nothing.</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Three or four fast cuts through Ting: a clip, a word tap, a review, another clip. One short line on each.</p><div class="text"><h4>On-screen text</h4><p>A few words each, in your own words</p></div></div>
-          <div><h4>Say</h4><p>Nothing. Only use this if someone really has noticed your Chinese improving, or word the question as your own.</p></div>
-        </li>
-      </ol>
-      <p class="idea-notes"><strong>Why this one:</strong> A Japanese learning version got about 100,000 views and nearly 4,000 saves, about 135 times that account's usual, using a one-word answer and fast cuts. It's easy to film and easy to change for any topic.</p>
-    </details>
-
-    <details class="idea">
-      <summary><div><b>The 50 words</b><span>"Stop learning Chinese in textbook order."</span></div></summary>
-      <div class="refs"><h4>Reference video</h4><div class="ref-row">
-        <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7658522978895908118?controls=1&amp;autoplay=1" data-title="Reference video by @englishbylily" aria-label="Play Reference video by @englishbylily"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@englishbylily/video/7658522978895908118" target="_blank" rel="noopener">@englishbylily</a> · 597K views<span>A closest match for the list idea: a word list that fills in as it's said. The 50 words angle itself is ours and untested.</span></figcaption></figure>
-      </div></div>
-      <ol class="beats">
-        <li>
-          <div><h4>Show</h4><p>Close a textbook and push it out of the frame.</p><div class="text"><h4>On-screen text</h4><p>Stop learning Chinese in textbook order</p></div></div>
-          <div><h4>Say</h4><p>"Stop learning Chinese in textbook order."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Write the top five words on paper, or show them on screen: 的 我 是 了 你.</p><div class="text"><h4>On-screen text</h4><p>2.4 million words / 1,138 Chinese videos / top 50 = 46%</p></div></div>
-          <div><h4>Say</h4><p>"Ting counted 2.4 million words across 1,138 Chinese videos. Just 50 words made up 46% of them."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Screen recording of Ting, with one of those words in a real clip.</p><div class="text"><h4>On-screen text</h4><p>the words people actually say</p></div></div>
-          <div><h4>Say</h4><p>"So Ting teaches the most common words first, in clips of real people saying them."</p></div>
-        </li>
-        <li>
-          <div><h4>Show</h4><p>Back to you.</p><div class="text"><h4>On-screen text</h4><p>Save this / follow for more</p></div></div>
-          <div><h4>Say</h4><p>"Save this, and follow for more."</p></div>
-        </li>
-      </ol>
-      <p class="idea-notes"><strong>Why this one:</strong> It goes against what people assume, and the number is real. Stick to this wording: knowing 46% of the words is not the same as understanding 46% of a video, so don't claim that.</p>
-    </details>
-
-    <div class="hook-bank">
-      <h3>More hooks to try</h3>
-      <p>Pick one that's true for you, then swap in your own details. A specific detail beats a general claim: "40 episodes and I still can't order a coffee" beats "I watch lots of dramas".</p>
-      <div class="hook-groups">
-        <div><h4>Make them guess</h4><ul><li>"What do you think she just said?"</li><li>"Rate my Chinese out of 10 after one week."</li><li>"Can you hear the word before I show you?"</li></ul></div>
-        <div><h4>Go against the usual advice</h4><ul><li>"Stop pausing Chinese videos to look up every word."</li><li>"Subtitles are why you're not improving."</li><li>"You don't need another Chinese textbook."</li></ul></div>
-        <div><h4>A specific struggle</h4><ul><li>"40 episodes in and I still can't order a coffee."</li><li>"I've studied Chinese for [time] and I just found this out."</li><li>"My grandma asked me one question and I froze."</li></ul></div>
-        <div><h4>Found it by accident</h4><ul><li>"I found this doomscrolling at 2am and now it's how I study."</li><li>"I wish someone had shown me this before I bought my HSK 1 book."</li><li>"My friend in Shanghai sent me this."</li></ul></div>
-        <div><h4>Your real experience</h4><ul><li>"As a Chinese teacher, this is what I'd have my students do between lessons."</li><li>"I've tried a lot of Chinese apps. This is the one I still open."</li><li>"Day 1 vs day 14 of swapping my scrolling for Chinese."</li></ul></div>
-      </div>
+    <h2><span class="num">7</span>The offer</h2>
+    <p class="intro">Simple, and agreed with you before you film anything.</p>
+    <div class="terms">
+      <div class="card term"><b>Paid</b><span>The offer varies by creator: your audience, your results so far and how many videos you make.</span></div>
+      <div class="card term"><b>Grows with you</b><span>When your videos take off, the deal grows with them.</span></div>
+      <div class="card term"><b>Ting Pro</b><span>Full access to the app, so you're talking about something you actually use.</span></div>
+      <div class="card term"><b>Direct</b><span>You deal straight with me. No agency, no exclusivity.</span></div>
     </div>
   </div>
 </section>
 
-<section class="c-sec" id="what-works">
-  <div class="wrap">
-    <h2>What's worked for other apps</h2>
-    <p class="tips-intro">I went through interviews with the teams behind apps that grew through creators, and pulled out what's useful if you're the one making the videos. None of this has been tested on Ting yet, so treat it as a starting point and tell me what you find.</p>
-
-    <div class="tips">
-      <div class="tip-group">
-        <h3>The first 3 seconds</h3>
-        <ul>
-          <li><b>Watch your 3-second retention.</b> Nomad Table's founder looks for 75 to 80% of viewers still watching after 3 seconds, and treats it as the best early sign of a format that will go viral. <i>(Nomad Table)</i></li>
-          <li><b>Do something in the hook.</b> Show a reaction, a prop or a real emotion. The exact reaction matters less than doing something. <i>(Nomad Table, Pingo)</i></li>
-          <li><b>Make the first frame look good.</b> It's one of three things Jenny AI checks for in a creator, along with how expressive you are and how well you tell a story. <i>(Jenny AI)</i></li>
-          <li><b>Give people something to do.</b> Asking them to guess, rate or decide keeps them thinking. Plutus Media says hooks that only make people wonder get 40% less engagement than these. <i>(Plutus Media)</i></li>
-          <li><b>Feel it when you say it.</b> Plutus Media found big, exaggerated emotion far outperforms calm delivery of the same idea. <i>(Plutus Media)</i></li>
-          <li><b>Deliver on the hook.</b> One clickbait hook got about 300,000 views, but only 174 likes and 8 comments, because the video didn't pay it off. <i>(Nomad Table)</i></li>
-        </ul>
-      </div>
-
-      <div class="tip-group">
-        <h3>Showing the app</h3>
-        <ul>
-          <li><b>Get the app in within 15 seconds.</b> Cal AI called this probably one of its biggest rules. <i>(Cal AI)</i></li>
-          <li><b>Show one clear moment.</b> Cal AI's was taking a photo of food. For Ting, I'd show tapping a word and instantly seeing what it means.</li>
-          <li><b>Use the app, don't just mention it.</b> Pingo found videos of people using the app converted far better than slideshows naming it on the last slide. <i>(Pingo)</i></li>
-          <li><b>Make it feel like your normal content.</b> A natural mention is the hard part, so don't read lines word for word. Natural doesn't mean hidden, though: always keep your paid partnership label on. <i>(Cal AI, Sideshift)</i></li>
-        </ul>
-      </div>
-
-      <div class="tip-group">
-        <h3>Finding a format</h3>
-        <ul>
-          <li><b>Start from what's already working.</b> Find videos doing well in your niche and change them by at least 10 to 20%, so it's your own take and not a copy. <i>(Sideshift)</i></li>
-          <li><b>Look beyond app videos.</b> Ordinary videos about a frustration can make great formats. Keep the problem and add your mention of the app. <i>(Sideshift)</i></li>
-          <li><b>Try culture and humour.</b> Pingo did well with beginner basics and with cultural hooks, like K-dramas and current events. <i>(Pingo)</i></li>
-          <li><b>Say something people will debate.</b> A take that divides opinion gets people replying. Aim for real disagreement, not pure rage bait. <i>(Jenny AI)</i></li>
-          <li><b>Show a normal learner, not a star.</b> Everyday progress gets more comments and saves, because viewers think "that could be me". <i>(Plutus Media)</i></li>
-          <li><b>Be early on new formats.</b> The first videos in a new format are often the ones that go the most viral. <i>(Sideshift)</i></li>
-        </ul>
-      </div>
-
-      <div class="tip-group">
-        <h3>Sticking with it</h3>
-        <ul>
-          <li><b>Warm up a new account.</b> Start with a video made purely for views, with no mention of the app. It helps show the algorithm you're a real person and who your content is for. <i>(Sideshift, Pingo)</i></li>
-          <li><b>Don't judge yourself on one video.</b> One of Jenny AI's best creators took 25 videos to pass 10,000 views. Two near-identical videos from one creator, 3 days apart, were 2,000 times apart in views. <i>(Jenny AI)</i></li>
-          <li><b>Look for repeat 10,000s.</b> Several videos in one format passing 10,000 views is a good sign it has legs. <i>(Sideshift)</i></li>
-          <li><b>Read your comments, not just your views.</b> People asking what the app is or how to get it matters more than a big number. <i>(Cal AI, Nomad Table)</i></li>
-          <li><b>When something works, tell me.</b> I'll share what I learn with everyone making videos for Ting, so a winning format helps all of us.</li>
-        </ul>
-      </div>
-    </div>
-
-    <p class="tips-note">Mostly from interviews on <a href="https://www.youtube.com/@SuperwallHQ" target="_blank" rel="noopener">Superwall's podcast</a>. The numbers are what each team reported, and I haven't checked them. Sideshift sells creator campaigns and Plutus Media sells UGC services, so keep that in mind with their advice.</p>
-  </div>
-</section>
-
-<section class="c-sec tint">
-  <div class="wrap ugc">
-    <img src="img/ting-point.png" alt="Ting the panda, holding a bamboo pointer">
-    <div>
-      <h2>Make great videos, but no audience yet?</h2>
-      <p>I'm also open to working with UGC creators on short videos for Ting's own accounts. Send two or three samples and your rate.</p>
-      <a class="btn ghost" href="mailto:noah@tingpanda.com?subject=UGC%20for%20Ting&amp;body=Links%20to%20my%20samples%3A%0A%0AMy%20rate%20per%20video%3A%0A">Send your samples</a>
-    </div>
-  </div>
-</section>
-
-<section class="c-sec faq" id="questions">
+<section class="c-sec tint faq" id="questions">
   <div class="wrap">
     <h2>Good to know</h2>
-    <details><summary>How many followers do I need?</summary><p>There's no minimum. What matters is that you've already made a video go viral on your own account or project, and that you look like the people Ting is for.</p></details>
-    <details><summary>How much do you pay?</summary><p>It varies by creator, depending on your audience, your results so far and how many videos you make. We'll talk it through and agree everything before you start.</p></details>
-    <details><summary>Does it cost me anything, or tie me down?</summary><p>No cost and no exclusivity. You can work with other apps too, and anything you commit to is agreed before you start.</p></details>
-    <details><summary>Know another creator who'd be good at this?</summary><p>Send them this page.</p></details>
+    <details><summary>Who should apply?</summary><p>Creators whose viewers are learning Chinese, or used to: language learners sharing their journey, Chinese teachers and tutors, heritage speakers, and people covering Chinese dramas, food, travel or culture. It helps if you've already had a video go viral and you look like the people learning.</p></details>
+    <details><summary>How many followers do I need?</summary><p>There's no minimum. A video that's already gone viral on your own account matters more than follower count.</p></details>
+    <details><summary>How much do you pay?</summary><p>It depends on your audience, your results so far and how many videos you make. We agree everything before you start.</p></details>
+    <details><summary>Does it cost me anything, or tie me down?</summary><p>No cost and no exclusivity. You can work with other apps too.</p></details>
+    <details><summary>Good at making videos, but no audience yet?</summary><p>I also work with UGC creators on videos for Ting's own accounts. Email two or three samples and your rate to <a href="mailto:noah@tingpanda.com?subject=UGC%20for%20Ting">noah@tingpanda.com</a>.</p></details>
     <details><summary>Where is Ting available?</summary><p>On iPhone and iPad, in most countries. It isn't available in mainland China, so it suits audiences outside China best.</p></details>
+    <details><summary>Know another creator who'd be good at this?</summary><p>Send them this page.</p></details>
   </div>
 </section>
 
 <section class="apply" id="apply">
   <div class="wrap">
     <h2>Want to work together?</h2>
-    <p>Send your channel links and your best-performing video.</p>
+    <p>Send your channel links and your best-performing video. I reply to every one.</p>
     <a class="btn big" href="mailto:noah@tingpanda.com?subject=Ting%20creators%20application&amp;body=My%20channels%3A%0A%0AMy%20best-performing%20video%3A%0A%0AWho%20follows%20me%3A%0A%0AHow%20I'd%20share%20Ting%3A%0A">Apply by email</a>
     <p class="mail">Or write to <a href="mailto:noah@tingpanda.com">noah@tingpanda.com</a></p>
   </div>
@@ -545,30 +392,25 @@
 </footer>
 
 <script>
-// Nothing plays until someone presses Play, and closing an idea stops its video.
-document.querySelectorAll(".ref-play").forEach(function (b) {
+// Nothing plays until someone presses Play, and closing a format stops its video.
+function play(b) {
   b.addEventListener("click", function () {
     var f = document.createElement("iframe");
     f.src = b.dataset.src; f.title = b.dataset.title; f.allow = "fullscreen; autoplay";
     f.dataset.src = b.dataset.src; f.dataset.title = b.dataset.title;
     b.replaceWith(f);
   });
-});
-document.querySelectorAll(".idea").forEach(function (d) {
+}
+document.querySelectorAll(".ref-play").forEach(play);
+document.querySelectorAll(".fmt").forEach(function (d) {
   d.addEventListener("toggle", function () {
     if (d.open) return;
     d.querySelectorAll(".ref iframe").forEach(function (f) {
       var b = document.createElement("button");
       b.className = "ref-play"; b.type = "button"; b.dataset.src = f.dataset.src; b.dataset.title = f.dataset.title;
       b.setAttribute("aria-label", "Play " + f.dataset.title);
-      b.innerHTML = "<span>\u25B6</span>Play video";
-      b.addEventListener("click", function () {
-        var n = document.createElement("iframe");
-        n.src = b.dataset.src; n.title = b.dataset.title; n.allow = "fullscreen; autoplay";
-        n.dataset.src = b.dataset.src; n.dataset.title = b.dataset.title;
-        b.replaceWith(n);
-      });
-      f.replaceWith(b);
+      b.innerHTML = "<span>▶</span>Play video";
+      play(b); f.replaceWith(b);
     });
   });
 });

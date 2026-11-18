@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Ting Creator Playbook</title>
-<meta name="description" content="The Ting creator playbook: who we're talking to, what to film, how a week works and what we offer.">
+<title>Ting Creator Checklist</title>
+<meta name="description" content="The Ting creator checklist: warm up, find an idea, make it, check it, post, review, repeat.">
 <meta property="og:title" content="Ting Creator Playbook">
 <meta property="og:description" content="Simple videos that help people finally understand spoken Chinese. Get paid, on an offer agreed with you.">
 <meta property="og:image" content="https://tingpanda.com/img/icon.png">
@@ -117,6 +117,31 @@
     .fmt summary, .fmt-body { padding-left: 18px; padding-right: 18px; }
   }
   @media (max-width: 480px) { .steps { grid-template-columns: 1fr; } }
+
+  .ck { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .ck li { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 13px 16px; }
+  .ck label { display: flex; gap: 12px; align-items: flex-start; cursor: pointer; font-weight: 600; color: var(--ink); }
+  .ck input { flex: none; width: 22px; height: 22px; margin: 1px 0 0; accent-color: var(--coral); }
+  .ck small { display: block; font-weight: 400; color: var(--ink-2); font-size: 15px; margin-top: 2px; }
+  .ck input:checked + span { color: var(--ink-2); text-decoration: line-through; }
+  .ck-reset { margin-top: 14px; appearance: none; border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 8px 16px; font: 700 14px "Nunito", sans-serif; color: var(--ink); cursor: pointer; }
+  .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .three .card h3 { font-size: 19px; }
+  .tagline { display: inline-block; padding: 3px 10px; border-radius: 999px; background: var(--coral-soft); color: var(--coral-dark); font: 800 13px "Nunito", sans-serif; margin-bottom: 10px; }
+  .src { margin: 18px 0 0; font-size: 15px; color: var(--ink-2); }
+  .src a { color: var(--coral-dark); font-weight: 700; }
+  .people { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .people ul { list-style: none; padding: 0; }
+  .people li { padding: 9px 0; border-top: 1px solid var(--line); }
+  .people li:first-child { border-top: 0; }
+  .people li::before { display: none; content: none; }
+  .people ul li { padding-left: 0; }
+  .people a { color: var(--coral-dark); font-weight: 700; }
+  .graph { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .graph svg { width: 100%; height: auto; display: block; margin-bottom: 12px; background: var(--bg-3); border-radius: 12px; }
+  .graph b { display: block; font: 800 18px "Nunito", sans-serif; margin-bottom: 4px; }
+  .graph span { color: var(--ink-2); font-size: 15px; }
+  @media (max-width: 860px) { .three, .people, .graph { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -125,11 +150,10 @@
   <div class="wrap">
     <a class="brand" href="./"><img src="img/icon.png" alt=""><img class="word" src="img/wordmark.png" alt="Ting"></a>
     <div class="links">
-      <a href="#who">Who</a>
-      <a href="#formats">What to film</a>
-      <a href="#hooks">Hooks</a>
-      <a href="#how">How it works</a>
-      <a href="#offer">The offer</a>
+      <a href="#first">Before you start</a>
+      <a href="#idea">Ideas</a>
+      <a href="#make">Make it</a>
+      <a href="#review">Review</a>
     </div>
     <div class="cta"><a class="btn" href="#apply">Apply</a></div>
   </div>
@@ -138,73 +162,108 @@
 <header class="c-hero">
   <div class="wrap">
     <div>
-      <p class="kicker">Ting creator playbook</p>
+      <p class="kicker">Ting creator checklist</p>
       <h1>Short videos that help people <em>finally understand spoken Chinese.</em></h1>
-      <p class="lede">Everything you need is on this one page: who we're talking to, what to film, how a week works and what you get. It takes about five minutes to read. Keep it open while you film.</p>
+      <p class="lede">Work down this page in order for every video: warm up once, then idea, make, check, post, review, repeat. Keep it open while you film.</p>
       <a class="btn big" href="#apply">Apply to join</a>
       <p class="small">Goes straight to me, Noah. I built Ting.</p>
       <ul class="toc">
-        <li><a href="#who"><span>1</span>Who</a></li>
-        <li><a href="#moment"><span>2</span>The one rule</a></li>
-        <li><a href="#formats"><span>3</span>What to film</a></li>
-        <li><a href="#hooks"><span>4</span>Hooks</a></li>
-        <li><a href="#rules"><span>5</span>Do and don't</a></li>
-        <li><a href="#how"><span>6</span>How it works</a></li>
-        <li><a href="#offer"><span>7</span>The offer</a></li>
+        <li><a href="#first"><span>0</span>Before you start</a></li>
+        <li><a href="#warm"><span>1</span>Warm up</a></li>
+        <li><a href="#idea"><span>2</span>Find an idea</a></li>
+        <li><a href="#make"><span>3</span>Make it</a></li>
+        <li><a href="#check"><span>4</span>Check it</a></li>
+        <li><a href="#post"><span>5</span>Post</a></li>
+        <li><a href="#review"><span>6</span>Review</a></li>
+        <li><a href="#next"><span>7</span>What next</a></li>
       </ul>
     </div>
     <img src="img/ting-celebrate.png" alt="Ting the panda, jumping with both arms up">
   </div>
 </header>
 
-<section class="c-sec" id="who">
+<section class="c-sec" id="first">
   <div class="wrap">
-    <h2><span class="num">1</span>Who we're talking to</h2>
-    <p class="intro">Ting is an iPhone app that teaches Mandarin through a feed of short, real Chinese clips. Each clip uses words the learner mostly knows, with one new word at a time. Tap any word for its pinyin and meaning. Every video speaks to one person.</p>
+    <h2><span class="num">0</span>Before you start</h2>
+    <p class="intro">Ting is an iPhone app that teaches Mandarin through a feed of short, real Chinese clips. Each clip uses words the learner mostly knows, with one new word at a time. Tap any word for its pinyin and meaning.</p>
     <div class="two">
       <div class="card">
-        <h3>The rusty middle learner</h3>
+        <h3>Who every video is for: the rusty middle learner</h3>
         <ul>
           <li>Learned Chinese before (school, uni, a class, an app), then stopped.</li>
           <li>Remembers lots of words, but can't follow people talking at normal speed.</li>
-          <li>Dramas are too hard. Beginner videos are too easy and a bit boring. Nothing sits in the middle.</li>
-          <li>Thinks they don't have time for a TV show, but scrolls more than they'd like.</li>
-          <li>Wants about 15 minutes a day, and the feeling of "I got better at listening today".</li>
+          <li>Dramas are too hard. Beginner videos are too easy. Nothing sits in the middle.</li>
+          <li>Scrolls more than they'd like, and wants about 15 minutes a day that feels like progress.</li>
+        </ul>
+        <div class="quotes">
+          <q>I know the words, I just can't hear them when people talk.</q>
+          <q>I used to be decent at Chinese.</q>
+        </div>
+      </div>
+      <div class="card">
+        <h3>The one rule: show the click</h3>
+        <p>People download when they see the app working on a real phone. Every video shows this moment by second 15:</p>
+        <ul>
+          <li><b>A real clip plays</b> in Ting, at normal speed.</li>
+          <li><b>You tap a word</b> and the pinyin and meaning pop up.</li>
+          <li><b>It clicks:</b> suddenly you understand what they said.</li>
+        </ul>
+        <p class="note">Screen-record on your iPhone (Control Centre, then Screen Recording) with your own Ting account.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="c-sec tint" id="warm">
+  <div class="wrap">
+    <h2><span class="num">1</span>Warm up your account (2 days, once)</h2>
+    <p class="intro">Before your first Ting video, spend two days teaching the app who your audience is. Don't post anything during these two days.</p>
+    <ol class="ck" data-ck="warm">
+      <li><label><input type="checkbox"><span>Follow the top creators for other Chinese-learning apps (below)<small>Watch their videos all the way through, like and comment. Notice which formats they repeat.</small></span></label></li>
+      <li><label><input type="checkbox"><span>Watch and interact with Chinese-learning content<small>The videos a rusty learner watches: listening tests, "how do you say", Chinese at real speed, learner stories, C-drama clips.</small></span></label></li>
+      <li><label><input type="checkbox"><span>Write down 3 formats you keep seeing<small>These are your first ideas for step 2.</small></span></label></li>
+    </ol>
+    <div class="people" style="margin-top:22px">
+      <div class="card">
+        <h3>Pingo AI's creators (Chinese)</h3>
+        <ul>
+          <li><a href="https://www.tiktok.com/@howtosaynihao" target="_blank" rel="noopener">@howtosaynihao</a>: top videos 617K and 483K likes</li>
+          <li><a href="https://www.tiktok.com/@learnchinesewithrae" target="_blank" rel="noopener">@learnchinesewithrae</a>: top video 288K likes</li>
+          <li><a href="https://www.tiktok.com/@nihao.pals" target="_blank" rel="noopener">@nihao.pals</a>: top video 24K likes</li>
         </ul>
       </div>
       <div class="card">
-        <h3>In their own words</h3>
-        <p>Use these lines. When they hear their own thought, they stop scrolling.</p>
-        <div class="quotes">
-          <q>I know the words, I just can't hear them when people talk.</q>
-          <q>Dramas are too fast and beginner videos put me to sleep.</q>
-          <q>I used to be decent at Chinese.</q>
-          <q>I want to know I'm actually getting better.</q>
-        </div>
+        <h3>Tenmin's creators (Chinese)</h3>
+        <ul>
+          <li><a href="https://www.tiktok.com/@study.with.wallakpu" target="_blank" rel="noopener">@study.with.wallakpu</a>: top video 171K likes</li>
+          <li><a href="https://www.tiktok.com/@tiavsjapanese" target="_blank" rel="noopener">@tiavsjapanese</a>: top video 80K likes</li>
+          <li><a href="https://www.tiktok.com/@chinesewithvio" target="_blank" rel="noopener">@chinesewithvio</a></li>
+        </ul>
       </div>
     </div>
-    <p class="note"><b>What we promise them:</b> the missing middle. Real Chinese that's just hard enough, about 15 minutes a day. Never shame anyone for scrolling. Show them a better use of 15 minutes of it.</p>
-  </div>
-</section>
-
-<section class="c-sec tint" id="moment">
-  <div class="wrap">
-    <h2><span class="num">2</span>The one rule: show the click</h2>
-    <p class="intro">People download when they see the app working on a real phone, not when they're told about it. Every video, in every format, shows this moment:</p>
-    <div class="moment">
-      <div><b>A real clip plays</b><span>Someone speaking Chinese at normal speed, inside Ting.</span></div>
-      <div><b>You tap a word</b><span>The pinyin and meaning pop up.</span></div>
-      <div><b>It clicks</b><span>Suddenly you understand what they actually said.</span></div>
+    <div class="refs">
+      <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7697328901172874516?controls=1&amp;autoplay=1" data-title="Reference video by @howtosaynihao" aria-label="Play reference video by @howtosaynihao"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@howtosaynihao/video/7697328901172874516" target="_blank" rel="noopener">@howtosaynihao</a> · 617K likes, for Pingo AI</figcaption></figure>
+      <figure class="ref"><button class="ref-play" type="button" data-src="https://www.tiktok.com/player/v1/7694595263511399687?controls=1&amp;autoplay=1" data-title="Reference video by @study.with.wallakpu" aria-label="Play reference video by @study.with.wallakpu"><span>▶</span>Play video</button><figcaption><a href="https://www.tiktok.com/@study.with.wallakpu/video/7694595263511399687" target="_blank" rel="noopener">@study.with.wallakpu</a> · 171K likes, for Tenmin</figcaption></figure>
     </div>
-    <p class="note"><b>Get to the app within 15 seconds.</b> Screen-record on your iPhone (Control Centre, then Screen Recording) using your own Ting account, so it shows your real words and progress.</p>
+    <p class="src">Like counts are from TikTok search on 18 Nov 2026.</p>
   </div>
 </section>
 
-<section class="c-sec" id="formats">
+<section class="c-sec" id="idea">
   <div class="wrap">
-    <h2><span class="num">3</span>What to film</h2>
-    <p class="intro">Four formats that already work for Ting or for apps like it. Start with the first two, post a few of each, and we'll double down on whatever wins. Change anything so it sounds like you, and only say what's true for you.</p>
-
+    <h2><span class="num">2</span>Find an idea</h2>
+    <p class="intro">Don't invent from scratch. Find a video that has already gone viral, keep its structure, and change the topic to Chinese and Ting. Then you know the idea works before you film it.</p>
+    <ol class="ck" data-ck="idea">
+      <li><label><input type="checkbox"><span>Find a viral video to copy<small>From the creators above, or from any niche. A format that worked for fitness or comedy can work for Chinese.</small></span></label></li>
+      <li><label><input type="checkbox"><span>Keep the structure, change the topic<small>Same timing, same kind of hook, same payoff, now about understanding Chinese.</small></span></label></li>
+      <li><label><input type="checkbox"><span>Pick which E it gives<small>Every viral video has at least one: entertainment, education or emotion (below).</small></span></label></li>
+    </ol>
+    <div class="three" style="margin-top:22px">
+      <div class="card"><span class="tagline">Entertainment</span><h3>It's funny or fun to watch</h3><p>Pingo and Tenmin creators get this from a learner's mistake and the app's reaction.</p></div>
+      <div class="card"><span class="tagline">Education</span><h3>They learn something</h3><p>A word, a phrase, or the moment a fast line suddenly makes sense.</p></div>
+      <div class="card"><span class="tagline">Emotion</span><h3>They feel it</h3><p>Frustration at Chinese, relief when it clicks, "that's me".</p></div>
+    </div>
+    <h3 style="margin:38px 0 16px;font:800 22px Nunito,sans-serif">Formats that already work</h3>
     <details class="fmt" open>
       <summary><div><b>Hook + demo <span class="tag">Start here</span></b><span>A two-second reaction from you, then the app.</span></div></summary>
       <div class="fmt-body">
@@ -262,64 +321,126 @@
       </div>
     </details>
 
-    <p class="note"><b>Your own idea, or a true story about your Chinese?</b> Try it. Find a video already doing well in your niche and change it enough to make it yours. When something new starts trending, I'll send it to you.</p>
+    <p class="src">Where this comes from: Robert McKeaveney (founder of Wants and Needs) on <a href="https://www.instagram.com/reel/DfOc5_bTDrS/" target="_blank" rel="noopener">taking the structure and changing the niche</a> (1.2M views), <a href="https://www.instagram.com/reel/De6G1gzzKCA/" target="_blank" rel="noopener">finding a viral video and twisting it</a> (304K views) and <a href="https://www.instagram.com/reel/DfY-8rETTPs/" target="_blank" rel="noopener">the 3 E's of value</a> (1.4M views).</p>
   </div>
 </section>
 
-<section class="c-sec tint" id="hooks">
+<section class="c-sec tint" id="make">
   <div class="wrap">
-    <h2><span class="num">4</span>Hooks to start with</h2>
-    <p class="intro">The first three seconds decide everything. Pick one, type it as text in TikTok or Instagram, and make sure the video pays it off.</p>
+    <h2><span class="num">3</span>Make it: hook, buildup, payoff</h2>
+    <p class="intro">Watch time decides whether a video spreads. The hook makes the viewer ask a question, the buildup makes them want the answer more, and the payoff answers it.</p>
+    <div class="three">
+      <div class="card"><span class="tagline">0 to 3 s</span><h3>Hook</h3><ul><li>Make them ask a question.</li><li>Use a visual, spoken, text and sound hook together.</li><li>Copy hooks that already went viral.</li></ul></div>
+      <div class="card"><span class="tagline">Middle</span><h3>Buildup</h3><ul><li>Make the question stronger.</li><li>Don't drag it out.</li><li>Hook them again every few seconds.</li></ul></div>
+      <div class="card"><span class="tagline">End</span><h3>Payoff</h3><ul><li>Answer the question.</li><li>Educate, entertain or move them.</li><li>Put it at the very end.</li></ul></div>
+    </div>
+    <p class="note"><b>Chain them:</b> each payoff can open the next question ("will the next clip be harder?"). When there are no questions left, people stop watching.</p>
+    <h3 style="margin:34px 0 14px;font:800 22px Nunito,sans-serif">Hooks to start with</h3>
     <ol class="hooks">
       <li>You know the words. You just can't hear them.</li>
       <li>Beginner videos too easy, dramas too hard? This is the middle.</li>
       <li>Stopped learning Chinese? You remember more than you think.</li>
       <li>I used to study Chinese. Now I can't follow a single conversation.</li>
-      <li>15 minutes of this instead of Instagram, every day</li>
-      <li>The step between Chinese cartoons and Chinese TV</li>
       <li>Can you follow this? Most people who studied Chinese can't.</li>
       <li>I wish I found this before I gave up on Chinese</li>
-      <li>Wait, Chinese lessons can be YouTube clips?</li>
-      <li>POV: every word in the video is tappable</li>
     </ol>
+    <p class="src">Where this comes from: Robert McKeaveney on <a href="https://www.instagram.com/reel/DexwuW4uC_O/" target="_blank" rel="noopener">every great hook creating a question</a> (1.7M views), <a href="https://www.instagram.com/reel/DfgwAuTT8Ec/" target="_blank" rel="noopener">chaining hooks and payoffs</a> (334K views) and <a href="https://www.instagram.com/reel/DfrEJGFTZ7J/" target="_blank" rel="noopener">what to fix in each part</a> (903K views).</p>
   </div>
 </section>
 
-<section class="c-sec" id="rules">
+<section class="c-sec" id="check">
   <div class="wrap">
-    <h2><span class="num">5</span>Do and don't</h2>
-    <div class="two dodont">
+    <h2><span class="num">4</span>Check it before you post</h2>
+    <p class="intro">Tick every box. If one fails, fix it before posting.</p>
+    <ol class="ck" data-ck="check">
+      <li><label><input type="checkbox"><span>The first 3 seconds make you ask a question</span></label></li>
+      <li><label><input type="checkbox"><span>Something happens in the first second: a reaction, a movement, a sound</span></label></li>
+      <li><label><input type="checkbox"><span>The middle never goes more than a few seconds without a new reason to keep watching</span></label></li>
+      <li><label><input type="checkbox"><span>The payoff answers the hook, at the very end</span></label></li>
+      <li><label><input type="checkbox"><span>It gives at least one E: entertainment, education or emotion</span></label></li>
+      <li><label><input type="checkbox"><span>Ting is on screen by second 15, with a word tapped and understood</span></label></li>
+      <li><label><input type="checkbox"><span>No promises of fluency or speed, and Ting isn't called "free"</span></label></li>
+      <li><label><input type="checkbox"><span>No text burned in with an editing app (add hook text inside TikTok or Instagram)</span></label></li>
+      <li><label><input type="checkbox"><span>No other apps' logos, and no reposted original YouTube videos</span></label></li>
+    </ol>
+    <button class="ck-reset" type="button" data-reset="check">Clear the ticks for the next video</button>
+  </div>
+</section>
+
+<section class="c-sec tint" id="post">
+  <div class="wrap">
+    <h2><span class="num">5</span>Post</h2>
+    <ol class="ck" data-ck="post">
+      <li><label><input type="checkbox"><span>Add the hook as text inside TikTok or Instagram, with a trending sound</span></label></li>
+      <li><label><input type="checkbox"><span>Turn on the paid-partnership label<small>TikTok's "Paid partnership" setting or Instagram's "Paid partnership" label. It's the law in Australia and the US.</small></span></label></li>
+      <li><label><input type="checkbox"><span>Your Ting link is in your bio, and the video points to it</span></label></li>
+      <li><label><input type="checkbox"><span>Post on both TikTok and Instagram</span></label></li>
+      <li><label><input type="checkbox"><span>Send Noah both links the same day</span></label></li>
+    </ol>
+    <p class="note"><b>Once you have 1,000 followers on Instagram:</b> make 3 to 5 versions of each idea, post them as Trial Reels (shown only to non-followers), and share the best one with everyone. Until then, post one video a day and test hooks across days.</p>
+    <p class="note"><b>Don't wait for perfect.</b> Messy hair or a shaky camera doesn't matter. The format, hook, buildup and payoff do. Robert McKeaveney explains why <a href="https://www.instagram.com/reel/Des5kd1TjL9/" target="_blank" rel="noopener">here</a> (402K views).</p>
+  </div>
+</section>
+
+<section class="c-sec" id="review">
+  <div class="wrap">
+    <h2><span class="num">6</span>Review the analytics (3 days after posting)</h2>
+    <p class="intro">Open the video's insights and look at the retention graph: the share of viewers still watching at each second. Its shape tells you which part broke.</p>
+    <div class="graph">
+      <div class="card"><svg viewBox="0 0 200 90" aria-hidden="true"><line x1="10" y1="80" x2="190" y2="80" stroke="#d9cfc6" stroke-width="2"/><path d="M10 12 C 18 60, 26 66, 40 68 L 190 74" fill="none" stroke="#e8604c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Steep drop at the start</b><span>The hook failed. Most people left in the first 2 or 3 seconds. Make the first second ask a clearer question.</span></div>
+      <div class="card"><svg viewBox="0 0 200 90" aria-hidden="true"><line x1="10" y1="80" x2="190" y2="80" stroke="#d9cfc6" stroke-width="2"/><path d="M10 12 C 40 30, 110 52, 190 72" fill="none" stroke="#e8604c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Slow slide through the middle</b><span>The buildup failed. People got bored waiting. Cut the slow parts and re-hook every few seconds.</span></div>
+      <div class="card"><svg viewBox="0 0 200 90" aria-hidden="true"><line x1="10" y1="80" x2="190" y2="80" stroke="#d9cfc6" stroke-width="2"/><path d="M10 12 C 30 26, 120 36, 150 40 C 165 44, 172 64, 190 68" fill="none" stroke="#e8604c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Drop just before the end</b><span>The payoff failed. It came too early or didn't answer the hook. Move it to the very end.</span></div>
+    </div>
+    <div class="two" style="margin-top:18px">
       <div class="card">
-        <h3 class="do">Do</h3>
+        <h3>What good looks like</h3>
         <ul>
-          <li>Show the real app on your phone, every time.</li>
-          <li>Do something in the first second: a reaction, a prop, a real feeling.</li>
-          <li>Look into the camera on the hook, and keep it fast.</li>
-          <li>Add hook text inside TikTok or Instagram, not in an editor.</li>
-          <li>Use a sound that's trending right now.</li>
-          <li>End with "Search ‘Ting - Learn Chinese Fast’ on the App Store", or point to your bio link.</li>
-          <li><b>Label it as paid:</b> TikTok's "Paid partnership" setting, Instagram's "Paid partnership" label, or #ad. It's the law in Australia and the US.</li>
+          <li>Most people are still watching after 3 seconds, then the line stays fairly flat.</li>
+          <li>The video beats your usual views (Instagram's dotted "typical" line). Three below it in a row lowers your next video's starting audience. Three above raises it.</li>
         </ul>
       </div>
       <div class="card">
-        <h3 class="dont">Don't</h3>
+        <h3>What each video did</h3>
         <ul>
-          <li>Promise fluency or speed, like "fluent in 3 months" or "10x faster".</li>
-          <li>Call Ting "free". It has a paid plan with a trial.</li>
-          <li>Burn text into the video in an editing app.</li>
-          <li>Show other apps' logos or put other apps down by name.</li>
-          <li>Offer anything in exchange for App Store ratings or reviews.</li>
-          <li>Download and repost the original YouTube videos behind Ting's clips. Show them inside Ting instead.</li>
-          <li>Film other people without their OK.</li>
+          <li><b>Views:</b> it found new people.</li>
+          <li><b>Follows:</b> they wanted more of you.</li>
+          <li><b>Downloads from your link and "what app is this?" comments:</b> it sold Ting. These matter most.</li>
+        </ul>
+        <p class="note">Half your videos can be for reach and half for sales. One video rarely does both.</p>
+      </div>
+    </div>
+    <p class="src">Where this comes from: Robert McKeaveney on <a href="https://www.instagram.com/reel/DfrEJGFTZ7J/" target="_blank" rel="noopener">reading your retention graph</a> (903K views), <a href="https://www.instagram.com/reel/Dftdu9XTCFK/" target="_blank" rel="noopener">your baseline</a> (112K views) and <a href="https://www.instagram.com/reel/De_AqYOTedK/" target="_blank" rel="noopener">the content funnel</a> (4.3M views).</p>
+  </div>
+</section>
+
+<section class="c-sec tint" id="next">
+  <div class="wrap">
+    <h2><span class="num">7</span>What to do next</h2>
+    <div class="two">
+      <div class="card">
+        <h3>It did well</h3>
+        <ul>
+          <li>Make 3 to 5 more versions now: same idea, new hook, new clip or a new setting.</li>
+          <li>A month later, change 1 or 2 parts and post it again.</li>
+          <li>Tell Noah, so other creators can try the format too.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>It didn't</h3>
+        <ul>
+          <li>Find the broken part in the graph (step 6) and fix only that part.</li>
+          <li>Keep what worked: if the hook held people, reuse it with a better payoff.</li>
+          <li>Post fewer videos you're confident in rather than many you're not.</li>
         </ul>
       </div>
     </div>
+    <p class="src">Where this comes from: Robert McKeaveney on <a href="https://www.instagram.com/reel/Dealt-zzJHI/" target="_blank" rel="noopener">making another version of a winner</a> (886K views; his first version got 14M views, the second 9M) and <a href="https://www.instagram.com/reel/Dfi_e6Kzw66/" target="_blank" rel="noopener">reposting old winners</a> (175K views).</p>
   </div>
 </section>
 
-<section class="c-sec tint" id="how">
+<section class="c-sec" id="how">
   <div class="wrap">
-    <h2><span class="num">6</span>How it works</h2>
+    <h2>Working together</h2>
     <p class="intro">You won't be left on your own. I find what's working across language-learning TikTok and send it to you, so you're never guessing.</p>
     <ol class="steps">
       <li><b>Apply</b><span>Send your channels and your best-performing video.</span></li>
@@ -344,16 +465,15 @@
           <li><b>Downloads from your link</b>, and comments asking about the app. A video with 10,000 views and 100 downloads beats a million views and none.</li>
           <li><b>3-second hold.</b> If most people are still watching after 3 seconds, the hook works.</li>
           <li><b>Not one video.</b> One creator at another app took 25 videos to pass 10,000 views. Several videos in one format passing 10,000 is the sign to keep going.</li>
-          <li><b>New account?</b> Warm it up for 5 to 7 days first: watch, like and comment on Chinese-learning videos, then start posting.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<section class="c-sec" id="offer">
+<section class="c-sec tint" id="offer">
   <div class="wrap">
-    <h2><span class="num">7</span>The offer</h2>
+    <h2>The offer</h2>
     <p class="intro">Simple, and agreed with you before you film anything.</p>
     <div class="terms">
       <div class="card term"><b>Paid</b><span>The offer varies by creator: your audience, your results so far and how many videos you make.</span></div>
@@ -364,7 +484,7 @@
   </div>
 </section>
 
-<section class="c-sec tint faq" id="questions">
+<section class="c-sec faq" id="questions">
   <div class="wrap">
     <h2>Good to know</h2>
     <details><summary>Who should apply?</summary><p>Creators whose viewers are learning Chinese, or used to: language learners sharing their journey, Chinese teachers and tutors, heritage speakers, and people covering Chinese dramas, food, travel or culture. It helps if you've already had a video go viral and you look like the people learning.</p></details>
@@ -412,6 +532,27 @@ document.querySelectorAll(".fmt").forEach(function (d) {
       b.innerHTML = "<span>▶</span>Play video";
       play(b); f.replaceWith(b);
     });
+  });
+});
+
+// Ticks are remembered on this device only, so a creator can come back mid-video.
+document.querySelectorAll(".ck").forEach(function (list) {
+  var key = "ting_ck_" + list.dataset.ck, saved = [];
+  try { saved = JSON.parse(localStorage.getItem(key) || "[]"); } catch (e) {}
+  var boxes = list.querySelectorAll("input");
+  boxes.forEach(function (b, i) {
+    b.checked = saved.indexOf(i) > -1;
+    b.addEventListener("change", function () {
+      var on = []; boxes.forEach(function (x, j) { if (x.checked) on.push(j); });
+      try { localStorage.setItem(key, JSON.stringify(on)); } catch (e) {}
+    });
+  });
+});
+document.querySelectorAll("[data-reset]").forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var list = document.querySelector('[data-ck="' + btn.dataset.reset + '"]');
+    list.querySelectorAll("input").forEach(function (b) { b.checked = false; });
+    try { localStorage.removeItem("ting_ck_" + btn.dataset.reset); } catch (e) {}
   });
 });
 </script>

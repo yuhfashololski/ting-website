@@ -142,6 +142,29 @@
   .graph b { display: block; font: 800 18px "Nunito", sans-serif; margin-bottom: 4px; }
   .graph span { color: var(--ink-2); font-size: 15px; }
   @media (max-width: 860px) { .three, .people, .graph { grid-template-columns: 1fr; } }
+
+  .lib { display: grid; gap: 22px; }
+  .libfmt { background: #fff; border: 1px solid var(--line); border-bottom-width: 4px; border-radius: 20px; padding: 26px; }
+  .libfmt h3 { font: 800 23px/1.2 "Nunito", sans-serif; margin: 6px 0 8px; }
+  .libfmt .ev { color: var(--ink-2); margin: 0 0 18px; }
+  .libgrid { display: grid; grid-template-columns: 1fr 400px; gap: 26px; align-items: start; }
+  .tl { display: grid; gap: 8px; }
+  .tl div { border-radius: 12px; padding: 12px 14px; border-left: 6px solid; background: var(--bg-3); }
+  .tl b { display: block; font: 800 15px "Nunito", sans-serif; }
+  .tl b i { font-style: normal; font-weight: 700; color: var(--ink-2); margin-left: 6px; }
+  .tl span { display: block; color: var(--ink-2); font-size: 15px; margin-top: 2px; }
+  .tl .h { border-color: #e8604c; } .tl .h b { color: #c4432f; }
+  .tl .bu { border-color: #e9a23b; } .tl .bu b { color: #a86a10; }
+  .tl .po { border-color: #3fa66b; } .tl .po b { color: #2f8a57; }
+  .key { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 18px; font: 700 14px "Nunito", sans-serif; color: var(--ink-2); }
+  .key span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+  .key .h::before { background: #e8604c; } .key .bu::before { background: #e9a23b; } .key .po::before { background: #3fa66b; }
+  .ting { margin: 16px 0 0; padding: 14px 16px; border-radius: 12px; background: var(--coral-soft); color: var(--ink); font-size: 15px; }
+  .librefs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .ref.ig { max-width: none; }
+  .ref.ig .ref-play, .ref.ig iframe { aspect-ratio: 28 / 62; }
+  .empty { color: var(--ink-2); }
+  @media (max-width: 860px) { .libgrid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -152,6 +175,7 @@
     <div class="links">
       <a href="#first">Before you start</a>
       <a href="#idea">Ideas</a>
+      <a href="#library">Library</a>
       <a href="#make">Make it</a>
       <a href="#review">Review</a>
     </div>
@@ -171,6 +195,7 @@
         <li><a href="#first"><span>0</span>Before you start</a></li>
         <li><a href="#warm"><span>1</span>Warm up</a></li>
         <li><a href="#idea"><span>2</span>Find an idea</a></li>
+        <li><a href="#library"><span>+</span>Format library</a></li>
         <li><a href="#make"><span>3</span>Make it</a></li>
         <li><a href="#check"><span>4</span>Check it</a></li>
         <li><a href="#post"><span>5</span>Post</a></li>
@@ -285,7 +310,68 @@
   </div>
 </section>
 
-<section class="c-sec tint" id="make">
+<section class="c-sec tint" id="library">
+  <div class="wrap">
+    <h2>Format library</h2>
+    <p class="intro">Real formats that passed the checklist above, one or more for each E. Each one is broken into its hook, buildup and payoff so you can see how it holds attention. Watch the originals, then change the topic to Chinese.</p>
+    <div class="key"><span class="h">Hook</span><span class="bu">Buildup</span><span class="po">Payoff</span></div>
+    <div class="lib">
+
+      <div class="libfmt">
+        <span class="tagline">Education</span>
+        <h3>"Your brain on scrolling" explainer</h3>
+        <p class="ev">Talking to camera with a mic, a small picture over your head that changes every few seconds. Two different creators used the same script for two different apps, about 60 to 90 seconds long: 150K likes and 37K likes.</p>
+        <div class="libgrid">
+          <div>
+            <div class="tl">
+              <div class="h"><b>Hook<i>0 to 3 s</i></b><span>On-screen text says your intelligence is in danger, next to a brain scan. Spoken: a plea to send this to friends you love. The question: why is my brain in danger?</span></div>
+              <div class="bu"><b>Buildup 1: the shock fact<i>3 to 19 s</i></b><span>A study reported in a big newspaper linking heavy screen time in teenagers to early signs of brain decline. A new picture appears with each claim, which hooks you again.</span></div>
+              <div class="bu"><b>Buildup 2: "is this you?"<i>19 to 36 s</i></b><span>Three quick questions about your own phone habits, then the twist that this is withdrawal. It stops being about teenagers and becomes about you.</span></div>
+              <div class="bu"><b>Buildup 3: the explanation<i>36 to 61 s</i></b><span>Why it happens: the part of the brain that controls impulses keeps developing until about 25, and short videos flood it with dopamine. This is the education.</span></div>
+              <div class="bu"><b>The turn<i>61 to 72 s</i></b><span>Don't throw your phone away, that's a fight you'll lose. Instead, use the habit you already have. The new question: how?</span></div>
+              <div class="po"><b>Payoff: the swap<i>72 to 89 s</i></b><span>The app is the answer: the same scrolling, but you're learning something. The 150K version never says the app's name and asks you to comment a word to get it. The 37K version names the app and shows it on screen.</span></div>
+            </div>
+            <p class="ting"><b>For Ting:</b> the same worry about scrolling, and the payoff is swapping it for a feed of real Chinese clips. Only quote a study you've checked yourself.</p>
+          </div>
+          <div class="librefs">
+            <figure class="ref ig"><button class="ref-play" type="button" data-src="https://www.instagram.com/reel/DZ0I_oKNdDL/embed/" data-title="Reference video by @improvewithkate" aria-label="Play reference video by @improvewithkate"><span>▶</span>Play video</button><figcaption><a href="https://www.instagram.com/reel/DZ0I_oKNdDL/" target="_blank" rel="noopener">@improvewithkate</a> · 150K likes, app not named</figcaption></figure>
+            <figure class="ref ig"><button class="ref-play" type="button" data-src="https://www.instagram.com/reel/DdfsYsVPv7S/embed/" data-title="Reference video by @jsandro.lockedin" aria-label="Play reference video by @jsandro.lockedin"><span>▶</span>Play video</button><figcaption><a href="https://www.instagram.com/reel/DdfsYsVPv7S/" target="_blank" rel="noopener">@jsandro.lockedin</a> · 37K likes, app named</figcaption></figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="libfmt">
+        <span class="tagline">Entertainment</span>
+        <h3>"While they're out ___ btw:"</h3>
+        <p class="ev">One line of text, no talking, a trending sound, under 10 seconds. Two different creators: 360K likes ("partying") and 140K likes ("studying").</p>
+        <div class="libgrid">
+          <div>
+            <div class="tl">
+              <div class="h"><b>Hook<i>0 to 2 s</i></b><span>The text line over someone who looks completely locked in at a desk, phone in hand. It sets up a "grind while others rest" story. The question: what is he working so hard on?</span></div>
+              <div class="bu"><b>Buildup<i>2 to 5 s</i></b><span>The camera moves in or over the shoulder. He stays serious and focused, so the tension holds.</span></div>
+              <div class="po"><b>Payoff<i>5 to 8 s</i></b><span>The phone screen: he's just doomscrolling. The joke is the gap between the serious setup and the reality. It's short enough that people watch it again.</span></div>
+            </div>
+            <p class="ting"><b>For Ting:</b> Ting's feed looks exactly like doomscrolling. Same setup, but the screen shows real Chinese clips: the twist is he really is getting ahead.</p>
+          </div>
+          <div class="librefs">
+            <figure class="ref ig"><button class="ref-play" type="button" data-src="https://www.instagram.com/reel/De2wHe8xxOw/embed/" data-title="Reference video by @smallspinale" aria-label="Play reference video by @smallspinale"><span>▶</span>Play video</button><figcaption><a href="https://www.instagram.com/reel/De2wHe8xxOw/" target="_blank" rel="noopener">@smallspinale</a> · 360K likes</figcaption></figure>
+            <figure class="ref ig"><button class="ref-play" type="button" data-src="https://www.instagram.com/reel/De4w0XjvpoQ/embed/" data-title="Reference video by @veidobabyy" aria-label="Play reference video by @veidobabyy"><span>▶</span>Play video</button><figcaption><a href="https://www.instagram.com/reel/De4w0XjvpoQ/" target="_blank" rel="noopener">@veidobabyy</a> · 140K likes</figcaption></figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="libfmt">
+        <span class="tagline">Emotion</span>
+        <h3>None yet</h3>
+        <p class="empty">Found one that passes the checklist? Send it to Noah and it goes here.</p>
+      </div>
+
+    </div>
+    <p class="src">Like counts as of 18 Nov 2026.</p>
+  </div>
+</section>
+
+<section class="c-sec" id="make">
   <div class="wrap">
     <h2><span class="num">3</span>Make it: hook, buildup, payoff</h2>
     <p class="intro">Watch time decides whether a video spreads. The hook makes the viewer ask a question, the buildup makes them want the answer more, and the payoff answers it.</p>
@@ -299,7 +385,7 @@
   </div>
 </section>
 
-<section class="c-sec" id="check">
+<section class="c-sec tint" id="check">
   <div class="wrap">
     <h2><span class="num">4</span>Check it before you post</h2>
     <p class="intro">Tick every box. If one fails, fix it before posting.</p>
@@ -319,12 +405,11 @@
   </div>
 </section>
 
-<section class="c-sec tint" id="post">
+<section class="c-sec" id="post">
   <div class="wrap">
     <h2><span class="num">5</span>Post</h2>
     <ol class="ck" data-ck="post">
       <li><label><input type="checkbox"><span>Add the hook as text inside TikTok or Instagram, with a trending sound</span></label></li>
-      <li><label><input type="checkbox"><span>Turn on the paid-partnership label<small>TikTok's "Paid partnership" setting or Instagram's "Paid partnership" label. It's the law in Australia and the US.</small></span></label></li>
       <li><label><input type="checkbox"><span>Your Ting link is in your bio<small>Don't name the app in the video. When people ask in the comments, reply "link in my bio".</small></span></label></li>
       <li><label><input type="checkbox"><span>Post on both TikTok and Instagram</span></label></li>
       <li><label><input type="checkbox"><span>Send Noah both links the same day</span></label></li>
@@ -334,7 +419,7 @@
   </div>
 </section>
 
-<section class="c-sec" id="review">
+<section class="c-sec tint" id="review">
   <div class="wrap">
     <h2><span class="num">6</span>Review the analytics (3 days after posting)</h2>
     <p class="intro">Open the video's insights and look at the retention graph: the share of viewers still watching at each second. Its shape tells you which part broke.</p>
@@ -365,7 +450,7 @@
   </div>
 </section>
 
-<section class="c-sec tint" id="next">
+<section class="c-sec" id="next">
   <div class="wrap">
     <h2><span class="num">7</span>What to do next</h2>
     <div class="two">
@@ -390,7 +475,7 @@
   </div>
 </section>
 
-<section class="c-sec" id="how">
+<section class="c-sec tint" id="how">
   <div class="wrap">
     <h2>Working together</h2>
     <p class="intro">You won't be left on your own. I find what's working across language-learning TikTok and send it to you, so you're never guessing.</p>
@@ -423,7 +508,7 @@
   </div>
 </section>
 
-<section class="c-sec tint" id="offer">
+<section class="c-sec" id="offer">
   <div class="wrap">
     <h2>The offer</h2>
     <p class="intro">Simple, and agreed with you before you film anything.</p>
@@ -436,7 +521,7 @@
   </div>
 </section>
 
-<section class="c-sec faq" id="questions">
+<section class="c-sec tint faq" id="questions">
   <div class="wrap">
     <h2>Good to know</h2>
     <details><summary>Who should apply?</summary><p>Creators whose viewers are learning Chinese, or used to: language learners sharing their journey, Chinese teachers and tutors, heritage speakers, and people covering Chinese dramas, food, travel or culture. It helps if you've already had a video go viral and you look like the people learning.</p></details>

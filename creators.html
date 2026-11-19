@@ -185,6 +185,14 @@
   .tr .beats { padding: 0 18px 10px; display: block; }
   .tr .beats td:first-child { width: 78px; }
   .tr q { color: var(--ink); font-weight: 600; }
+  .lib { grid-template-columns: minmax(0, 1fr); }
+  .ebox, .ebox-body, .ebox .fmt, .fmt-body, .tr { min-width: 0; }
+  .cmpwrap { padding: 0 18px 14px; overflow-x: auto; }
+  .cmp { width: 100%; border-collapse: collapse; font-size: 15px; min-width: 620px; }
+  .cmp th, .cmp td { text-align: left; vertical-align: top; padding: 10px 10px 10px 0; border-top: 1px solid var(--line); color: var(--ink-2); }
+  .cmp thead th { font: 800 13px "Nunito", sans-serif; color: var(--ink); border-top: 0; }
+  .cmp tbody th { font: 800 14px "Nunito", sans-serif; color: var(--coral-dark); width: 110px; }
+  .cmp td:last-child { color: var(--ink); font-weight: 600; }
   @media (max-width: 600px) { .ebox > summary { flex-wrap: wrap; gap: 6px 12px; padding: 18px 52px 18px 18px; position: relative; } .ebox > summary b { width: 100%; } .ebox > summary .cnt { margin-left: 0; width: 100%; } .ebox > summary::after { position: absolute; right: 18px; top: 18px; } .ebox-body { padding: 0 12px 14px; } }
 </style>
 </head>
@@ -392,6 +400,27 @@
               <tr><td>58–62 s</td><td>A personal recommendation and "try it out".</td></tr>
               </table>
             </details>
+              <details class="tr" open>
+                <summary>Script comparison: what changed between the two <em>beat by beat</em></summary>
+                <div class="cmpwrap"><table class="cmp">
+                  <thead><tr><th>Beat</th><th>@improvewithkate (150K)</th><th>@jsandro.lockedin (37K)</th><th>What changed</th></tr></thead>
+                  <tbody>
+                  <tr><th>Hook</th><td>The exact same opening line in both, word for word. Kate adds on-screen text saying your intelligence is in danger.</td><td>Same line, no change.</td><td>Identical. The hook is the part they copied exactly.</td></tr>
+                  <tr><th>Length</th><td>89 seconds</td><td>62 seconds</td><td>Jeremy cut 27 seconds, mostly from the payoff and explanation.</td></tr>
+                  <tr><th>The study</th><td>Teenagers with heavy screen time show early-Alzheimer's brain markers, in kids as young as 16.</td><td>Same study, but "teenagers <i>and young adults</i>".</td><td>Jeremy widens it so adults feel included.</td></tr>
+                  <tr><th>Scary name</th><td>A separate beat naming the condition.</td><td>Folded into the study beat.</td><td>Faster, one less stop.</td></tr>
+                  <tr><th>"Is this you?" 1</th><td>Do you reach for your phone before saying good morning to anyone?</td><td>Is it harder to concentrate on work than a few years ago?</td><td>Kate: home and family life. Jeremy: work life, so it's aimed at adults.</td></tr>
+                  <tr><th>"Is this you?" 2</th><td>Do you snap when your phone is taken away?</td><td>Do you need to scroll to fall asleep?</td><td>Same switch: a teenager moment versus an adult one.</td></tr>
+                  <tr><th>"Is this you?" 3</th><td>Can you not sit still without it?</td><td>Same question.</td><td>Identical.</td></tr>
+                  <tr><th>Reframe</th><td>Not attitude, it's withdrawal, and withdrawal means addiction.</td><td>Not normal, it's dependence, and dependence means addiction.</td><td>Same sentence shape, new nouns.</td></tr>
+                  <tr><th>Brain</th><td>Dopamine stops the brain developing properly, and you're watching it happen.</td><td>Your phone rewires you to put scrolling ahead of your own goals, and you can feel it now.</td><td>Kate: fear about damage. Jeremy: guilt about goals.</td></tr>
+                  <tr><th>Turn</th><td>Don't put the phone away, it's a fight you won't win.</td><td>Same idea.</td><td>Identical.</td></tr>
+                  <tr><th>Payoff</th><td>Keep the same scrolling and the same dopamine, but the feed is easy learning from real books. The app is never named.</td><td>Names a screen-time app that blocks distracting apps and checks in first.</td><td>Kate swaps the habit. Jeremy blocks it. The swap needs no willpower.</td></tr>
+                  <tr><th>Call to action</th><td>Comment a keyword and she'll send you the app.</td><td>A personal recommendation and "try it out".</td><td>Kate's makes people comment, and comments push the video out.</td></tr>
+                  <tr><th>Result</th><td>150K likes</td><td>37K likes</td><td>Same hook and structure. The bigger one kept the app secret, swapped the habit instead of blocking it, and asked for comments.</td></tr>
+                  </tbody>
+                </table></div>
+              </details>
             </div>
           </details>
 
